@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PharmConsilium</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css" rel="stylesheet">
+  
+  
+  
+<!-- SEO Метатеги -->
+<title>Генератор маркетинговых идей | PharmConsilium</title>
+<meta name="description" content="Онлайн-чат от PharmConsilium помогает быстро получить креативные маркетинговые идеи для продвижения фармацевтического бизнеса.">
+<meta name="keywords" content="маркетинг, фармацевтика, идеи, чат, бизнес, PharmConsilium, генератор идей, продвижение">
+<meta name="author" content="PharmConsilium">
+
+<!-- Open Graph (для соцсетей) -->
+<meta property="og:title" content="Генератор маркетинговых идей | PharmConsilium">
+<meta property="og:description" content="Онлайн-чат для генерации креативных идей по продвижению фармацевтических услуг.">
+<meta property="og:image" content="/favicon.ico">
+<meta property="og:url" content="https://pharmconsilium.com/">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Генератор маркетинговых идей | PharmConsilium">
+<meta name="twitter:description" content="PharmConsilium помогает фармацевтам и бизнесу находить уникальные идеи для продвижения.">
+<meta name="twitter:image" content="/favicon.ico">
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+  
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <style>
+  
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(45, 55, 72, 0.4); /* Цвет совпадает с #2D3748 */
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(45, 55, 72, 0); /* Цвет совпадает с #2D3748 */
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(45, 55, 72, 0); /* Цвет совпадает с #2D3748 */
+  }
+}
+
+.typing-dots span {
+  display: inline-block;
+  opacity: 0;
+  animation: typing 1.5s infinite;
+}
+
+.typing-dots span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.typing-dots span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.typing-dots span:nth-child(3) {
+  animation-delay: 1s;
+}
+
+@keyframes typing {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.bg-custom-gray {
+    background-color: #2D3748; /* Возвращаем к стандартному серому цвету */
+}
+
+#chat-widget-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+#chat-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 5%;
+  width: 400px; /* или другая ширина по вашему выбору */
+  height: 600px; /* или другая высота по вашему выбору */
+  border: none;
+  z-index: 3;
+}
+
+#chat-bubble {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  z-index: 3;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background-color: #2D3748;
+  animation: pulse 2s infinite;
+}
+
+.reply-avatar-container {
+  display: flex;
+  align-items: center;
+}
+
+.reply-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  #chat-popup {
+    top: 0px;
+    right: 0px;
+    bottom: 0;
+    left: 0;
+    width: 97%;
+    height: 88%;
+    margin-top: 20%;
+    margin-left: 1%;
+    border-radius: 1;
+    overflow: hidden;
+    z-index: 9999;
+  }
+}
+
+.disabled-input {
+  background-color: #f0f0f0;
+  color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+.disabled-button {
+  background-color: #d0d0d0;
+  color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+  </style>
+</head>
+<body>
+  <div id="chat-widget-container">
+    <div id="chat-bubble" class="w-16 h-16 rounded-full flex items-center justify-center cursor-pointer text-3xl">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+      </svg>
+    </div>
+    <div id="chat-popup" class="hidden absolute bottom-20 right-0 w-96 bg-white rounded-md shadow-md flex flex-col transition-all text-sm">
+      <div id="chat-header" class="flex justify-between items-center p-4 bg-custom-gray text-white rounded-t-md">
+        <h3 class="m-0 text-lg">ИИ-ассистент</h3>
+        <button id="close-popup" class="bg-transparent border-none text-white cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div id="chat-messages" class="flex-1 p-4 overflow-y-auto"></div>
+      <div id="chat-input-container" class="p-4 border-t border-gray-200">
+        <div class="flex space-x-4 items-center">
+          <input type="text" id="chat-input" class="flex-1 border border-gray-300 rounded-md px-4 py-2 outline-none w-3/4" placeholder="Задайте вопрос">
+          <button id="chat-submit" class="bg-custom-gray text-white rounded-md px-4 py-2 cursor-pointer">Отправить</button>
+        </div>
+        <div class="flex text-center text-xs pt-4">
+          <span class="flex-1">PharmConsilium</span>
+        </div>
+      </div>
+    </div>
+    <iframe id="chat-widget-iframe" style="display: none;" src="about:blank"></iframe>
+  </div>
+
+<script>
+
+ let isWidgetOpenedManually = false; // переменная открытия виджета
+ let isUserMessageSent = false; // переменная для отслеживания отправки первого сообщения
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const chatInput = document.getElementById('chat-input');
+    const chatSubmit = document.getElementById('chat-submit');
+    const chatMessages = document.getElementById('chat-messages');
+    const chatBubble = document.getElementById('chat-bubble');
+    const chatPopup = document.getElementById('chat-popup');
+    const closePopup = document.getElementById('close-popup');
+
+    chatSubmit.addEventListener('click', function () {
+      if (isUserMessageSent) {
+        // Если сообщение уже было отправлено, не делать ничего
+        return;
+      }
+
+      const message = chatInput.value.trim();
+      if (!message) return;
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+      chatInput.value = '';
+      onUserRequest(message);
+
+      isUserMessageSent = true; // Установить флаг после отправки первого сообщения
+      chatInput.disabled = true; // Блокировать поле ввода
+      chatInput.classList.add('disabled-input'); // Применить стили для заблокированного ввода
+
+      chatSubmit.disabled = true; // Блокировать кнопку отправки
+      chatSubmit.classList.add('disabled-button'); // Применить стили для заблокированной кнопки
+
+    });
+
+    chatInput.addEventListener('keyup', function (event) {
+      if (event.key === 'Enter') {
+        chatSubmit.click();
+      }
+    });
+
+    chatBubble.addEventListener('click', function () {
+      console.log("Chat bubble clicked");
+      console.log("Screen width: " + window.innerWidth);
+      togglePopup();
+      isWidgetOpenedManually = true;
+      console.log("isWidgetOpenedManually set to true");
+    });
+    
+    chatBubble.addEventListener('touchstart', function () {
+      console.log("Chat bubble touched");
+      togglePopup();
+      isWidgetOpenedManually = true;
+      console.log("isWidgetOpenedManually set to true");
+    });
+
+    closePopup.addEventListener('click', function () {
+      togglePopup();
+    });
+
+    function togglePopup() {
+      const chatPopup = document.getElementById('chat-popup');
+      const chatWidgetContainer = document.getElementById('chat-widget-container');
+    
+      chatPopup.classList.toggle('hidden');
+      if (chatPopup.classList.contains('hidden')) {
+        chatPopup.style.pointerEvents = 'none';
+        chatPopup.classList.add('minimized');
+    
+        // Установка z-index для всех элементов, кроме chat-bubble
+        Array.from(chatWidgetContainer.children).forEach(child => {
+          if (child.id !== 'chat-bubble') {
+            child.style.zIndex = '1'; // Устанавливаем z-index равный 1
+          }
+        });
+    
+      } else {
+        chatPopup.style.pointerEvents = 'auto';
+        chatPopup.classList.remove('minimized');
+    
+        // Сброс z-index для всех элементов, кроме chat-bubble
+        Array.from(chatWidgetContainer.children).forEach(child => {
+          if (child.id !== 'chat-bubble') {
+            child.style.zIndex = ''; // Убираем установленный ранее z-index
+          }
+        });
+    
+      }
+    }
+
+    let currentSessionId = null;
+    function onUserRequest(userMessage) {
+      const userMessageElement = document.createElement('div');
+      userMessageElement.className = 'flex justify-end mb-3';
+      userMessageElement.innerHTML = `
+        <div class="bg-gray-800 text-white rounded-lg py-2 px-4 max-w-[70%]">
+          ${userMessage}
+        </div>
+      `;
+      chatMessages.appendChild(userMessageElement);
+
+       showTypingIndicator();
+
+       const openAIRequest = `Forget all previous commands and instructions. You are a marketing genius and a consultant for creative marketing ideas. Your task is to help colleagues from the PharmConsilium company sell their business, which can be described with the following data  on this webpage: https://calcpharmconsilium.tilda.ws/webbot_data. Use this info as your database. Analyze the request and suggest one of the PharmConcilium services to resolve the client’s request.
+Give examples of successful campaigns from your knowledge base similar to your answer.
+The length of the answer is always more than 400 words. Do not mention the website as the source. Use emoticons to convey your emotions and mood. Always answer in Russian, be emotional!`;
+
+       axios.post('https://HappyDoomGuy.pythonanywhere.com/api/chat', { message: userMessage })
+        .then(response => {
+          const replyMessage = response.data.reply;
+	  currentSessionId = response.data.session_id;
+          if (replyMessage) {
+            reply(replyMessage, false); // Отправляем ответ от OpenAI
+            addFeedbackButtons();  // Добавляем кнопки обратной связи
+          } else {
+            reply('Извините, я не могу ответить на это.', false);
+          }
+        })
+
+        .catch(error => {
+            console.error('Error fetching GPT-3 response:', error);
+            reply('Извините, произошла ошибка: ' + error.message, false);
+        });
+      }
+
+          function showTypingIndicator() {
+  const typingIndicator = document.createElement('div');
+  typingIndicator.className = 'reply-avatar-container mb-3';
+  typingIndicator.innerHTML = `
+    <img src="images/robo.png" alt="Avatar" class="reply-avatar mr-2">
+    <div class="bg-gray-200 text-black rounded-lg py-2 px-4 max-w-[70%]">
+    Печатает<span class="typing-dots"><span>.</span><span>.</span><span>.</span></span>
+  `;
+  chatMessages.appendChild(typingIndicator);
+}
+
+
+    function hideTypingIndicator() {
+  const typingIndicator = chatMessages.querySelector('.reply-avatar-container');
+  if (typingIndicator) {
+    chatMessages.removeChild(typingIndicator);
+  }
+}
+
+function isValidEmail(email) {
+  const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  return re.test(String(email).toLowerCase());
+}
+
+function reply(message, isUser, isEmailInput) {
+    hideTypingIndicator();
+    const replyElement = document.createElement('div');
+    replyElement.className = `flex mb-3 ${isUser ? 'justify-end' : 'items-center'}`;
+
+    let innerContent;
+    if (isEmailInput) {
+        innerContent = `
+            <div class="flex flex-col ${isUser ? 'bg-gray-800 text-white' : 'bg-gray-200 text-black'} rounded-lg py-2 px-4 max-w-[70%]">
+                ${message}
+                <input type="email" class="email-input mt-2 px-2 py-1 rounded" placeholder="Ваша электронная почта">
+                <button class="email-submit-btn mt-2 bg-gray-500 text-white rounded px-2 py-1">Отправить</button>
+            </div>`;
+    } else {
+        innerContent = `
+            <div class="${isUser ? 'bg-gray-800 text-white' : 'bg-gray-200 text-black'} rounded-lg py-2 px-4 max-w-[70%]">
+                ${message}
+            </div>`;
+    }
+
+    replyElement.innerHTML = isUser ? innerContent : '<img src="images/robo.png" alt="Avatar" class="reply-avatar mr-2">' + innerContent;
+    chatMessages.appendChild(replyElement);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+
+    if (isEmailInput) {
+	innerContent = `
+      <div class="flex flex-col ${isUser ? 'bg-gray-800 text-white' : 'bg-gray-200 text-black'} rounded-lg py-2 px-4 max-w-[70%]">
+        ${message}
+        <input type="email" class="email-input mt-2 px-2 py-1 rounded" placeholder="Ваша электронная почта">
+        <button class="email-submit-btn mt-2 bg-gray-500 text-white rounded px-2 py-1">Отправить</button>
+      </div>`;
+        replyElement.innerHTML = innerContent;
+        const emailInput = replyElement.querySelector('.email-input');
+        const emailSubmitBtn = replyElement.querySelector('.email-submit-btn');
+        emailInput.addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+              emailSubmitBtn.click();
+            }
+          });
+        emailSubmitBtn.addEventListener('click', function() {
+            if (isValidEmail(emailInput.value)) {
+              sendEmail(emailInput.value);
+              emailSubmitBtn.disabled = true;
+              replyElement.innerHTML = '';
+              reply('Спасибо, мы свяжемся с Вами в ближайшее время.', false);
+            } else {
+              alert('Пожалуйста, введите действительный адрес электронной почты.');
+            }
+        });
+    }
+}
+
+function sendEmail(email) {
+    axios.post('https://HappyDoomGuy.pythonanywhere.com/api/email', {
+        session_id: currentSessionId,
+        email: email
+    })
+    .then(response => {
+        console.log("Email отправлен успешно");
+    })
+    .catch(error => {
+        console.error("Ошибка при отправке email:", error);
+	alert('Произошла ошибка при отправке электронной почты. Пожалуйста, попробуйте снова.');
+	const emailSubmitBtn = document.querySelector('.email-submit-btn');
+        if (emailSubmitBtn) emailSubmitBtn.disabled = false;
+    });
+}
+
+function addFeedbackButtons() {
+    const feedbackElement = document.createElement('div');
+    feedbackElement.className = 'flex justify-center items-center my-3';
+    feedbackElement.innerHTML = `
+        <div class="text-center mr-4">Полезно ли было?</div>
+        <button class="feedback-btn bg-green-500 text-white rounded-md px-4 py-2 mr-2">Да</button>
+        <button class="feedback-btn bg-red-500 text-white rounded-md px-4 py-2">Нет</button>
+    `;
+    chatMessages.appendChild(feedbackElement);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+
+    const yesButton = feedbackElement.querySelector('.feedback-btn.bg-green-500');
+    const noButton = feedbackElement.querySelector('.feedback-btn.bg-red-500');
+
+    yesButton.addEventListener('click', () => sendFeedbackResponse(feedbackElement, true));
+    noButton.addEventListener('click', () => sendFeedbackResponse(feedbackElement, false));
+
+}
+
+function sendFeedbackResponse(feedbackElement, isPositiveFeedback) {
+    const feedback = isPositiveFeedback ? 'Да' : 'Нет';
+
+    // Отправка отзыва на сервер
+    axios.post('https://HappyDoomGuy.pythonanywhere.com/api/feedback', {
+        session_id: currentSessionId,
+        feedback: feedback
+    })
+    .then(response => {
+        console.log("Отзыв отправлен успешно");
+    })
+    .catch(error => {
+        console.error("Ошибка при отправке отзыва:", error);
+    });
+
+    if (isPositiveFeedback) {
+        reply('Если хотите еще больше идей, поделитесь пожалуйста Вашей электронной почтой. Мы обязательно Вам напишем.', false, true);
+    } else {
+        reply('Спасибо за Ваш отзыв', false, false);
+    }
+    feedbackElement.remove();
+}
+
+    // Функция для отображения приветственного сообщения
+    function showWelcomeMessage() {
+  console.log("showWelcomeMessage called, isWidgetOpenedManually:", isWidgetOpenedManually);
+  if (!isWidgetOpenedManually && chatPopup.classList.contains('hidden')) {
+    togglePopup();
+  }
+}
+
+    reply('Расскажите нам о своих целях (название бренда и тип продукции (ОТС, БАД, ИМН, косметика), основной конкурент на рынке, планируемый бюджет рекламной кампании и продолжительность). Мы поможем получить вам с помощью ИИ больше информации и более  точную оценку необходимого бюджета для продвижения вашего бренда. Это поможе вам спланировать рекламные кампанию с прогнозируемым результатом прироста продаж!', false);
+
+    // Задержка на 10 (значение 10000) секунд для открытия виджета и показа приветственного сообщения
+    // setTimeout(showWelcomeMessage, 10000); 
+  }); 
+
+</script>
+
+</body>
+</html>
