@@ -28,6 +28,7 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/inputmask.min.js"></script>
         
     </head>
 
@@ -43,27 +44,7 @@
         <!-- Spinner End -->
 
 
-        <!-- Topbar Start -->
-        <div class="container-fluid bg-dark px-5 d-none d-lg-block">
-            <div class="row gx-0 align-items-center" style="height: 45px;">
-                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
-                    <div class="d-flex flex-wrap">
-                        <a href="#" class="text-light me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
-                        <a href="#" class="text-light me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
-                        <a href="#" class="text-light me-0"><i class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-center text-lg-end">
-                    <div class="d-flex align-items-center justify-content-end">
-                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-0"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Topbar End -->
+  
 
 
         <!-- Navbar & Hero Start -->
@@ -78,9 +59,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="#tools" class="nav-item nav-link active">Увеличить продажи</a>
+                        <a href="index.html#tools" class="nav-item nav-link active">Увеличить продажи</a>
                         <!-- <a href="#tools" class="nav-item nav-link">Tools</a> -->
-                        <a href="#customer" class="nav-item nav-link">Путь пользователя к бренду</a>
+                        <a href="index.html#customer" class="nav-item nav-link">Путь пользователя к бренду</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Инструменты</a>
                             <div class="dropdown-menu m-0">
@@ -89,15 +70,14 @@
                                 <a href="brand.html" class="dropdown-item">Брендированные посадочные страницы</a>
                                 <a href="messanger-marketing.html" class="dropdown-item">Мессенджер - маркетинг</a>
                                 <a href="rep-brand.html" class="dropdown-item">Управление репутацией бренда</a>
-                                <a href="ad" class="dropdown-item">Рекламные кампании</a>
+                                <a href="ad-company.html" class="dropdown-item">Рекламные кампании</a>
                             </div>
                         </div>
-                        <a href="https://t.me/V0VA_IV" class="nav-item nav-link">Есть вопросы? Мы на связи в Телеграм!</a>
+                        <a href="https://t.me/V0VA_IV" target="_blank" class="nav-item nav-link">Есть вопросы? Мы на связи в Телеграм!</a>
                     </div>
                     <!-- <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Book Appointment</a> -->
                 </div>
             </nav>
-
 
             <!-- Carousel Start -->
             <div class="header-carousel owl-carousel">
@@ -231,9 +211,9 @@
                         </div>
                     </div>
                     
-                    <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
+                    <!-- <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
                         <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Services More</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -263,7 +243,7 @@
                                 <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Duis aute irure dolor in reprehenderit in voluptate.</p>
                                 <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Velit esse cillum dolore eu fugiat nulla pariatur.</p>
                             </div> -->
-                            <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">Discover More</a>
+                            <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5 open-chat-btn">Совет ИИ-ассистента</a>
                         </div>
                     </div>
                 </div>
@@ -295,7 +275,8 @@
                                 <!-- </div> -->
                                 <a href="#" class="h4 d-flex justify-content-center">"Старт"</a>
                                 <p class="my-4">Использование отдельных инструментов Pharma e-Commerce на ваш выбор.</p><p>Вы можете заказать у нас выполнение отдельных задач: например, разработку серии посадочных страниц.</p><p>Подходит, если у вас уже есть своя команда и стратегия, но требуются экспертиза или ресурсы в отдельных областях.</p>
-                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Read More</a>
+                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1 more-info-btn" data-bs-toggle="modal" data-bs-target="#phoneModal" data-package="Старт">Узнать подробности</a>
+
                             </div>
                         </div>
                     </div>
@@ -311,7 +292,8 @@
                                 </div> -->
                                 <a href="#" class="h4 d-flex justify-content-center">"Базовый"</a>
                                 <p class="my-4"> Комплексное ведение проекта  Pharma e-Commerce «под ключ» за согласованный фиксированный бюджет.</p><p>Выполним все: от стратегии и контента до ежедневного управления рекламой и аналитикой.</p><p>Оптимально, если вы хотите передать digital-продвижение профессионалам и получить прогнозируемый результат</p>
-                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Read More</a>
+                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1 more-info-btn" data-bs-toggle="modal" data-bs-target="#phoneModal" data-package="Базовый">Узнать подробности</a>
+
                             </div>
                         </div>
                     </div>
@@ -327,7 +309,8 @@
                                 </div> -->
                                 <a href="#" class="h4 d-flex justify-content-center">"Партнерский"</a>
                                 <p class="my-4">Оплата за результат, т.е.  за каждую проданную упаковку.</p><p> Оплата процента или фиксированной ставки только с реальных продаж.</p><p>Идеально, если вам нужна «агрессивная» экспансия с упором на достижение KPI на длительный период времени от 12 месяцев.</p>
-                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Read More</a>
+                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1 more-info-btn" data-bs-toggle="modal" data-bs-target="#phoneModal" data-package="Премиум">Узнать подробности</a>
+
                             </div>
                         </div>
                     </div>
@@ -338,7 +321,31 @@
             </div>
         </div>
         <!-- Feature End -->
-
+<!-- Модальное окно -->
+<div class="modal fade" id="phoneModal" tabindex="-1" aria-labelledby="phoneModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center">
+        <div class="modal-header">
+          <h5 class="modal-title w-100" id="phoneModalLabel">Оставьте номер телефона и наш менеджер свяжется с вами!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Отображение выбранного пакета -->
+          <div id="selected-package" class="mb-3 fw-bold"></div>
+  
+          <!-- Поле ввода номера -->
+          <input type="tel" id="user-phone" placeholder="Введите номер телефона" class="form-control w-50 mx-auto mb-2" />
+  
+          <!-- Кнопка отправки -->
+          <button id="send-phone-btn" class="btn btn-success w-100">Отправить номер</button>
+  
+          <!-- Сообщение об успехе/ошибке -->
+          <div id="result-msg" class="mt-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
         <!-- Book Appointment Start -->
         <div class="container-fluid appointment py-5" id="ai">
@@ -365,7 +372,7 @@
                                             <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et deserunt qui cupiditate veritatis enim ducimus.</p>
                                         </div> -->
                                         <div class="text-start mb-4">
-                                            <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">Получить бонус</a>
+                                            <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5 open-chat-btn">Получить бонус</a>
                                         </div>
                                     </div>
                                 </div>
@@ -384,44 +391,68 @@
                         <div class="appointment-form rounded p-5">
                             <!-- <p class="fs-4 text-uppercase text-primary">Форма обратной связи</p> -->
                             <h1 class="display-5 mb-4">Получить персональное предложение</h1>
-                            <form>
-                                <div class="row gy-3 gx-4">
-                                    <div class="col-xl-6">
-                                        <input type="text" class="form-control py-3 border-primary bg-transparent text-white" placeholder="Ваш бренд">
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <input type="text" class="form-control py-3 border-primary bg-transparent text-white" placeholder="Процент прироста продаж">
-                                    </div>
-                                    <div class="col-xl-12">
-                                        <input type="email" class="form-control py-3 border-primary bg-transparent" placeholder="Ваша почта">
-                                    </div>
-                                    <!-- <div class="col-xl-6">
-                                        <select class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
-                                            <option selected>Your Gender</option>
-                                            <option value="1">Male</option>
-                                            <option value="2">FeMale</option>
-                                            <option value="3">Others</option>
-                                        </select>
-                                    </div> -->
-                                    <!-- <div class="col-xl-6">
-                                        <input type="date" class="form-control py-3 border-primary bg-transparent">
-                                    </div> -->
-                                    <!-- <div class="col-xl-6">
-                                        <select class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
-                                            <option selected>Department</option>
-                                            <option value="1">Physiotherapy</option>
-                                            <option value="2">Physical Helth</option>
-                                            <option value="2">Treatments</option>
-                                        </select>
-                                    </div> -->
-                                    <div class="col-12">
-                                        <textarea class="form-control border-primary bg-transparent text-white" name="text" id="area-text" cols="30" rows="5" placeholder="Ваш комментарий"></textarea>
-                                    </div>
-                                    <div class="col-12">
-                                        <button type="button" class="btn btn-primary text-white w-100 py-3 px-5">Отправить</button>
-                                    </div>
-                                </div>
-                            </form>
+                            <form action="https://formsubmit.co/romanprog.pharmconsilium@gmail.com" method="post">
+                            <!-- Отключаем капчу и задаём редирект -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <input
+                              type="hidden"
+                              name="_next"
+                              value="https://127.0.0.1:5500/thank_you.html" 
+                            >
+                            <input
+                              type="hidden"
+                              name="_subject"
+                              value="Новая заявка с сайта"
+                            >
+                      
+                            <div class="row gy-3 gx-4">
+                              <div class="col-xl-6">
+                                <input
+                                  type="text"
+                                  name="brand"
+                                  class="form-control py-3 border-primary bg-transparent text-white"
+                                  placeholder="Ваш бренд"
+                                  required
+                                >
+                              </div>
+                              <div class="col-xl-6">
+                                <input
+                                  type="text"
+                                  name="growth"
+                                  class="form-control py-3 border-primary bg-transparent text-white"
+                                  placeholder="Процент прироста продаж"
+                                  required
+                                >
+                              </div>
+                              <div class="col-xl-12">
+                                <input
+                                  type="email"
+                                  name="email"
+                                  class="form-control py-3 border-primary bg-transparent text-white"
+                                  placeholder="Ваша почта"
+                                  required
+                                >
+                              </div>
+                              <div class="col-12">
+                                <textarea
+                                  name="comment"
+                                  id="area-text"
+                                  class="form-control border-primary bg-transparent text-white"
+                                  cols="30"
+                                  rows="5"
+                                  placeholder="Ваш комментарий"
+                                ></textarea>
+                              </div>
+                              <div class="col-12">
+                                <button
+                                  type="submit"
+                                  class="btn btn-primary text-white w-100 py-3 px-5"
+                                >
+                                  Отправить
+                                </button>
+                              </div>
+                            </div>
+                          </form>
                         </div>
                     </div>
                 </div>
@@ -671,10 +702,10 @@
                             
                             <div class="d-flex align-items-center">
                                 <i class="fas fa-share fa-2x text-white me-2"></i>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://t.me/PharmConsilium" target="_blank"><i class="fab fa-telegram"></i></a>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.pinterest.com/pharmconsilium/" target="_blank"><i class="fab fa-pinterest"></i></a>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.instagram.com/pharmconsilium/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.youtube.com/channel/UCLjkMonolXAtMYPOAi1dlGQ" target="_blank"><i class="fab fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>
@@ -693,9 +724,9 @@
                         <div class="footer-item d-flex flex-column">
                             <h4 class="mb-4 text-white">Навигация</h4>
                             <a href="#"><i class="fas fa-angle-right me-2"></i> Главная</a>
-                            <a href="#tools"><i class="fas fa-angle-right me-2"></i> Инструменты услуги</a>
-                            <a href="#customer"><i class="fas fa-angle-right me-2"></i> Путь пользователя к бренду</a>
-                            <a href="#format"><i class="fas fa-angle-right me-2"></i> Форматы работ</a>
+                            <a href="index.html#tools"><i class="fas fa-angle-right me-2"></i> Инструменты услуги</a>
+                            <a href="index.html#customer"><i class="fas fa-angle-right me-2"></i> Путь пользователя к бренду</a>
+                            <a href="index.html#format"><i class="fas fa-angle-right me-2"></i> Форматы работ</a>
                             <a href="#ai"><i class="fas fa-angle-right me-2"></i> ИИ ассистент</a>
                         </div>
                     </div>
@@ -714,43 +745,188 @@
         </div>
         <!-- Footer End -->
         
-        <!-- Copyright Start -->
-       
-        <!-- Copyright End -->
+   
 
         <!-- Back to Top -->
         <!-- <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>    -->
-        <iframe 
-        src="chat-widget.html" 
-        style="position: fixed; bottom: 20px; right: 60px; width: 400px; height: 600px; border: none; z-index: 9999; max-height: 60%;" 
-        title="Чат от PharmConsilium"
-        class="chat-widget"
-        >
-      </iframe>
-      <style>
-        .chat-widget {
-          position: fixed;
-          bottom: 20px;
-          right: 20px;
-          width: 400px;
-          height: 600px;
-          border: none;
-          z-index: 9999;
-          /* border-radius: 10px;
-          box-shadow: 0 0 15px rgba(0,0,0,0.2); */
-          
-        }
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const BOT_TOKEN = '7664316970:AAHDDZtywUidM6RqvQOn_MmVURCVhY2972I';
+                const CHAT_ID = '7207166462';
+                let selectedPackage = '';
+               
+            
+                // Обработка кнопки "Узнать подробности"
+                document.querySelectorAll('.more-info-btn').forEach(button => {
+                    button.addEventListener('click', () => {
+                        selectedPackage = button.getAttribute('data-package');
+                        document.getElementById('selected-package').textContent = `Вы выбрали пакет: "${selectedPackage}"`;
+                    });
+                });
+            
+                // Обработка кнопки отправки телефона
+                document.getElementById('send-phone-btn').addEventListener('click', () => {
+                    const phone = document.getElementById('user-phone').value.trim();
+                    const resultMsg = document.getElementById('result-msg');
+            
+                    if (!phone) {
+                        resultMsg.textContent = 'Введите номер телефона!';
+                        resultMsg.style.color = 'red';
+                        return;
+                    }
+            
+                    const message = selectedPackage
+                        ? `🧩 Новый интерес к пакету: "${selectedPackage}"\n📞 Номер: ${phone}`
+                        :  'Ничего не выбрано';
+            
+                    fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            chat_id: CHAT_ID,
+                            text: message
+                        })
+                    })
+                    .then(res => res.json())
+                    .then(data => {
+                        resultMsg.textContent = 'Ваш номер успешно отправлен!';
+                        resultMsg.style.color = 'green';
+                        document.getElementById('user-phone').value = '';
+            
+                        setTimeout(() => {
+                            // Сброс модалки
+                            const modal = bootstrap.Modal.getInstance(document.getElementById('phoneModal'));
+                            if (modal) modal.hide();
+                            resultMsg.textContent = '';
+                            document.getElementById('selected-package').textContent = '';
+                            selectedPackage = '';
+                        }, 2000);
+                    })
+                    .catch(err => {
+                        resultMsg.textContent = 'Ошибка при отправке!';
+                        resultMsg.style.color = 'red';
+                    });
+                });
+            });
+            </script>
+            
+
+<div id="chat-toggle" >
+    <img src="img/icon-chat.png" alt="Chat Icon"/>
+</div>
+
+<!-- Iframe с чатом -->
+<iframe 
+  src="chat-widget.html" 
+  title="Чат от PharmConsilium"
+  class="chat-widget collapsed"
+></iframe>
+
+<style>
+  #chat-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+    z-index: 100;
+    animation: pulse 2s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #chat-toggle img {
+    width: 50px;
+    height: 50px;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+  }
+  .chat-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    border-radius: 10px;
+    /* box-shadow: 0 0 15px rgba(0,0,0,0.2); */
+    transition: all 0.3s ease;
+    
+  }
+  
+
+  .chat-widget.collapsed {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .chat-widget.expanded {
+    width: 400px;
+    height: 600px;
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 9999;
+  }
+
+  @media (max-width: 768px) {
+    .chat-widget.expanded {
+      width: 100vw;
+      height: 100vh;
+      bottom: 0;
+      right: 0;
+      border-radius: 0;
+    }
+  }
+</style>
+
+<script>
+    const chat = document.querySelector('.chat-widget');
+    const toggleBtn = document.getElementById('chat-toggle');
+    const iframe = document.querySelector('iframe');  // Ищем iframe с чатом
+  
+    toggleBtn.addEventListener('click', () => {
+      // Разворачиваем чат
+      chat.classList.remove('collapsed');
+      chat.classList.add('expanded');
       
-        @media (max-width: 768px) {
-          .chat-widget {
-            width: 100vw;
-            height: 100vh;
-            bottom: 220;
-            right: 140px;
-            border-radius: 0;
-          }
-        }
-      </style>
+      // Находим элемент chat-bubble внутри iframe и имитируем клик
+      const chatBubble = iframe.contentWindow.document.getElementById('chat-bubble');
+      if (chatBubble) {
+        chatBubble.click();  // Симуляция клика по chat-bubble
+        openChat();
+      }
+      
+      toggleBtn.style.display = 'none';
+    });
+  
+    // Получаем сообщение от iframe (например, закрытие чата)
+    window.addEventListener("message", (event) => {
+      if (event.data === "close-chat") {
+        chat.classList.remove('expanded');
+        chat.classList.add('collapsed');
+        toggleBtn.style.display = 'flex';
+      }
+    });
+  </script>
+ 
+  
+
+
+ <script>
+    // Применение маски для ввода номера телефона
+    const phoneInput = document.getElementById('user-phone');
+    const phoneMask = new Inputmask('+375 (99) 999-99-99'); // Маска для российского номера телефона
+    phoneMask.mask(phoneInput);
+  </script>
       
         
         <!-- JavaScript Libraries -->

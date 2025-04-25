@@ -127,3 +127,39 @@
 
 })(jQuery);
 
+
+ const openChatButtons = document.querySelectorAll('.open-chat-btn');
+  
+    function openChat() {
+      chat.classList.remove('collapsed');
+      chat.classList.add('expanded');
+      toggleBtn.style.display = 'none';
+  
+      try {
+        const chatBubble = iframe.contentWindow.document.getElementById('chat-bubble');
+        if (chatBubble) {
+          chatBubble.click();
+        }
+      } catch (e) {
+        console.warn('Невозможно получить доступ к chat-bubble внутри iframe (возможно CORS)');
+      }
+    }
+  
+    toggleBtn.addEventListener('click', openChat);
+  
+    openChatButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openChat();
+      });
+    });
+  
+    window.addEventListener("message", (event) => {
+      if (event.data === "close-chat") {
+        chat.classList.remove('expanded');
+        chat.classList.add('collapsed');
+        toggleBtn.style.display = 'flex';
+      }
+    });
+
+
