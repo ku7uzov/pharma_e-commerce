@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("./fonts/SF-Pro-Display-Regular.otf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "SF Pro Display";
+    src: url("./fonts/SF-Pro-Display-Bold.otf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  }
+
 
 /*** Spinner Start ***/
 /*** Spinner ***/
@@ -193,7 +207,8 @@
 
 /*** Navbar ***/
 .navbar-light .navbar-nav .nav-link {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+
     position: relative;
     margin-right: 25px;
     padding: 35px 0;
@@ -226,7 +241,7 @@
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
-    font-family: "Font Awesome 5 Free";
+    font-family: "SF Pro Display";
     font-weight: 600;
     vertical-align: middle;
     margin-left: 8px;
@@ -334,7 +349,7 @@
     width: 70px;
     height: 70px;
     top: 50%;
-    left: 20px;
+    left: 10%;
     transform: translateY(-50%);
     border-radius: 50%;
     background: var(--bs-primary);
@@ -351,7 +366,7 @@
     width: 70px;
     height: 70px;
     top: 50%;
-    right: 20px;
+    right: 10%;
     transform: translateY(-50%);
     border-radius: 50%;
     background: var(--bs-primary);
@@ -1244,3 +1259,7 @@
       border-radius: 0;
     }
   }
+
+  body {
+  font-family: 'Raleway', sans-serif;
+}
