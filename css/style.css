@@ -409,7 +409,7 @@
     height: 700px;
     margin-top: 95px;
     display: block;
-    object-fit: cover;
+  
     transition: 0.5s;
 
 }

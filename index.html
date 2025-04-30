@@ -58,56 +58,58 @@
 
 
     <div class="position-relative p-0">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0 ">
-            <div class="container-fluid d-flex align-items-center justify-content-between">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-3 py-2">
+            <div class="container_padding container-fluid d-flex flex-row justify-content-between align-items-center">
     
-                <!-- Лого -->
-                <a href="index.html" class="navbar-brand p-0" style="margin-left: 8%;">
-                    <h3 class="m-0" style="font-size: 24px;">
-                        <img src="img/logo_pharm.png" alt="Logo" style="margin-bottom: 13px;">
-                        Pharma e-Commerce
-                    </h3>
+                <!-- Левая часть: логотип -->
+                <a href="index.html" class="navbar-brand d-flex align-items-center p-0 m-0">
+                    <img src="img/logo_pharm.png" alt="Logo" style="height: 32px; margin-right: 8px;">
+                    <span class="fw-bold" style="font-size: 18px;">Pharma e-Commerce</span>
                 </a>
     
-                <!-- Кнопка-бургер -->
-                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <!-- Кнопка-бургер справа -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
     
-                <!-- Навигация + кнопка Телеграм -->
-                <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
-                    <div class="navbar-nav mx-auto py-0 ">
-                        <a href="index.html#tools" class="nav-item nav-link ">Увеличить продажи</a>
+                <!-- Навигация -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 text-center">
+                        <a href="index.html#tools" class="nav-item nav-link">Увеличить продажи</a>
                         <a href="index.html#customer" class="nav-item nav-link">Путь пользователя к бренду</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link " data-bs-toggle="dropdown">Инструменты <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.5 0.900024L7.64645 7.04647C7.84171 7.24173 8.15829 7.24173 8.35355 7.04647L14.5 0.900024" stroke="#20262F" stroke-width="1.5" stroke-linecap="round"/>
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">Инструменты
+                                <svg width="16" height="8" viewBox="0 0 16 8" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 0.9L7.65 7.05C7.84 7.24 8.16 7.24 8.35 7.05L14.5 0.9"
+                                          stroke="#20262F" stroke-width="1.5" stroke-linecap="round" />
                                 </svg>
-                                </a>
+                            </a>
                             <div class="dropdown-menu m-0">
                                 <a href="optimization-card.html" class="dropdown-item">Оптимизация карточек товара</a>
-                                <a href="package-content.html" class="dropdown-item">Пакетное производство контента (постов)</a>
-                                <a href="brand.html" class="dropdown-item">Брендированные посадочные страницы</a>
-                                <a href="messanger-marketing.html" class="dropdown-item">Мессенджер - маркетинг</a>
-                                <a href="rep-brand.html" class="dropdown-item">Управление репутацией бренда</a>
+                                <a href="package-content.html" class="dropdown-item">Пакетное производство контента</a>
+                                <a href="brand.html" class="dropdown-item">Брендированные посадочные</a>
+                                <a href="messanger-marketing.html" class="dropdown-item">Мессенджер-маркетинг</a>
+                                <a href="rep-brand.html" class="dropdown-item">Управление репутацией</a>
                                 <a href="ad-company.html" class="dropdown-item">Рекламные кампании</a>
                             </div>
                         </div>
     
-                        <!-- Кнопка Телеграм, видимая только на мобильных -->
-                        <a href="https://t.me/V0VA_IV" target="_blank" class="btn btn-primary d-lg-none mt-3"
-                           style="border-radius: 30px; font-size: 20px;color:white; font-weight: 400;width:285px;">
+                        <!-- Мобильная кнопка Телеграм -->
+                        <a href="https://t.me/V0VA_IV" target="_blank"
+                           class="btn btn-primary d-lg-none mt-3"
+                           style="border-radius: 30px; font-size: 16px; font-weight: 500;">
                             Мы на связи в Телеграм!
                         </a>
                     </div>
                 </div>
     
-                <!-- Кнопка Телеграм для больших экранов -->
-                <a href="https://t.me/V0VA_IV" target="_blank" class="btn btn-primary d-none d-lg-block"
-                   style="margin-left: auto; margin-right: 7%; color: white; border-radius: 30px; font-size: 20px; font-weight: 400;width:285px;">
+                <!-- Десктоп-кнопка Телеграм -->
+                <a href="https://t.me/V0VA_IV" target="_blank"
+                   class="btn btn-primary d-none d-lg-block ms-3"
+                   style="border-radius: 30px; font-size: 18px; font-weight: 500;color:white">
                     Мы на связи в Телеграм!
                 </a>
-    
             </div>
         </nav>
     </div>
@@ -356,7 +358,7 @@
                           border-radius: 24px;
                           padding: 10px 25px;
                         ">
-                          <h1 class="m-0" style="color: #2476f7; font-weight: 700;">«Старт»</h1>
+                          <h2 class="m-0" style="color: #2476f7; font-weight: 700;">«Старт»</h2>
                         </div>
                       </div>
                   
@@ -419,14 +421,14 @@
                           background-color: white;
                           border-radius: 24px;
                           padding: 10px 25px;">
-                          <h1 class="m-0" style="color: #2476f7; font-weight: 700;">«Базовый»</h1>
+                          <h2 class="m-0" style="color: #2476f7; font-weight: 700;">«Базовый»</h2>
                         </div>
                       </div>
                   
                       <!-- Основной текст -->
                       <div class="mb-4">
                         <p class="mb-3" style="color: #1e1e1e; font-size: 24px; line-height: 1.4;">
-                          Комплексное ведение проекта&nbsp;<b>Pharma e-Commerce</b> «под ключ» за согласованный фиксированный бюджет
+                          Комплексное ведение проекта&nbsp;Pharma e-Commerce «под ключ» за согласованный фиксированный бюджет
                         </p>
                         <div style="color: #6c6c6c; font-size: 18px; line-height: 1.5; list-style: none;">
                           <li class="d-flex align-items-start mb-2">
@@ -576,7 +578,7 @@
                     <div class="section-title text-start">
                         <!-- <h4 class="sub-title pe-3 mb-0">Калькулятор бюджета</h4> -->
                         <h1 class="mb-4">Совет от ИИ-ассистента</h1>
-                        <h5 class="mb-3"> Воспользуйтесь бонусом! Получите
+                        <h5 class="mb-3" style="font-size: 24px;font-weight: 500;"> Воспользуйтесь бонусом! Получите
                             совет от ИИ-ассистента по возможным рекламным кампаниям вашего бренда </h5>
                         <p style="font-size: 18px;">Получите Мы предлагаем уникальную услугу для расчета бюджета на эффективное продвижение
                             вашего фармацевтического бренда через онлайн-каналы продаж. Чтобы помочь вам максимизировать
