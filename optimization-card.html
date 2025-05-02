@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
     <head>
         <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="img/favicon-16x16.png">
         <title>Оптимизация карточек товаров для интернет-аптек и маркетплейсов</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="оптимизация карточек товара, фото препаратов, SEO-оптимизация, продвижение OTC-препаратов, карточки товара в аптеках" name="keywords">
@@ -28,14 +29,29 @@
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/inputmask.min.js"></script>
-        
+        <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]function(){(m[i].a=m[i].a[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(101552932, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/101552932" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
     </head>
 
     <body>
 
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <div class="spinner-border " style="width: 3rem; height: 3rem;color: rgba(36, 118, 247, 1);" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
@@ -55,7 +71,7 @@
                     </a>
         
                     <!-- Кнопка-бургер справа -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" style="margin-left: 10px;">
                         <span class="fa fa-bars"></span>
                     </button>
         
@@ -83,7 +99,7 @@
                             </div>
         
                             <!-- Мобильная кнопка Телеграм -->
-                            <a href="https://t.me/V0VA_IV" target="_blank"
+                            <a href="https://t.me/e_commerce_pharmconsilium_bot" target="_blank"
                                class="btn btn-primary d-lg-none mt-3"
                                style="border-radius: 30px; font-size: 16px; font-weight: 500;color:white">
                                 Мы на связи в Телеграм!
@@ -92,7 +108,7 @@
                     </div>
         
                     <!-- Десктоп-кнопка Телеграм -->
-                    <a href="https://t.me/V0VA_IV" target="_blank"
+                    <a href="https://t.me/e_commerce_pharmconsilium_bot" target="_blank"
                        class="btn btn-primary d-none d-lg-block ms-3"
                        style="border-radius: 30px; font-size: 18px; font-weight: 500;color:white">
                         Мы на связи в Телеграм!
@@ -112,7 +128,7 @@
                     <li class="breadcrumb-item"><a href="index.html">Pharm E-commerce</a></li>
                     <!-- <li class="breadcrumb-item"><a href="#">Pages</a></li> -->
                     <li class="breadcrumb-item active " style="color: rgba(36, 118, 247, 1);">Оптимизация карточки товара</li>
-                    <li class="breadcrumb-item "><a href="https://t.me/V0VA_IV" target="_blank" >Есть вопросы? Мы на связи в Телеграм!</a></li>
+                    <li class="breadcrumb-item "><a href="https://t.me/e_commerce_pharmconsilium_bot" target="_blank" >Есть вопросы? Мы на связи в Телеграм!</a></li>
                 </ol>    
             </div>
         </div>
@@ -291,23 +307,35 @@
             </div>
             
         <!-- Модальное окно -->
-        <div class="modal fade" id="phoneModal" tabindex="-1" aria-labelledby="phoneModalLabel" aria-hidden="true">
+      
+    <div class="modal fade" id="phoneModal" tabindex="-1" aria-labelledby="phoneModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content text-center">
-            <div class="modal-header">
-                <h5 class="modal-title w-100" id="phoneModalLabel">Оставьте номер, и наш менеджер свяжется с вами</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-            </div>
-            <div class="modal-body">
-                <input type="tel" id="user-phone" placeholder="Введите номер телефона" class="form-control w-50 mx-auto mb-2" />
+                <div class="modal-header" style="border-bottom:none">
+                   
+                        
+                   
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="" id="phoneModalLabel"> Спасибо за выбор</h3>
 
-                <button id="send-phone-btn" class="btn btn-primary text-white w-100">Отправить номер</button>
-                <div id="result-msg" class="mt-2"></div>
-            </div>
+                    <!-- Отображение выбранного пакета -->
+                    <p>Оставьте номер телефона и наш менеджер свяжется с вами!</p>
+
+                    <!-- Поле ввода номера -->
+                    <input type="tel" id="user-phone" placeholder="Введите номер телефона"
+                        class="form-control w-50 mx-auto mb-2" />
+
+                    <!-- Кнопка отправки -->
+                    <button id="send-phone-btn" class="btn btn-primary text-white " style="min-width: 235px;">Отправить номер</button>
+
+                    <!-- Сообщение об успехе/ошибке -->
+                    <div id="result-msg" class="mt-2"></div>
+                </div>
             </div>
         </div>
-        </div>
- 
+    </div>
 
         
         <!-- Team End -->
@@ -364,10 +392,10 @@
                         <div class="appointment-form  p-5" style="border-radius: 40px;background:rgba(36, 118, 247, 1)">
                             <!-- <p class="fs-4 text-uppercase text-primary">Форма обратной связи</p> -->
                             <h2 class="mb-4 text-white w-700">Получить персональное предложение</h2>
-                            <form action="https://formsubmit.co/romanprog.pharmconsilium@gmail.com" method="post">
+                            <form action="https://formsubmit.co/pharmconsilium@gmail.com" method="post">
                                 <!-- Отключаем капчу и задаём редирект -->
                                 <input type="hidden" name="_captcha" value="false">
-                                <input type="hidden" name="_next" value="https://127.0.0.1:5500/thank_you.html">
+                                <input type="hidden" name="_next" value="https://e-commerce.pharmconsilium.com/thank_you.html">
                                 <input type="hidden" name="_subject" value="Новая заявка с сайта">
     
                                 <div class="row gy-3 gx-4">
@@ -498,12 +526,14 @@
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="mb-4 text-white">ФармКонсилиум</h4>
-                            <a href=""> Беларусь, 230025, г. Гродно,
-                                площадь Советская 2А, офис 26</a>
-                            <a href="">pharmconsilium@gmail.com</a>
-                            <a href="">pharmconsilium.office@gmail.com</a>
+                            <a href="https://g.co/kgs/JFqXxSo" target="_blank">
+                                Беларусь, 230025, г. Гродно, площадь Советская 2А, офис 26
+                            </a>
+                            <a href="mailto:pharmconsilium@gmail.com">pharmconsilium@gmail.com</a>
+                            <a href="mailto:pharmconsilium.office@gmail.com">pharmconsilium.office@gmail.com</a>
                             <a href="tel:+375293220018">+375293220018</a>
                         </div>
+                        
                     </div>
                 </div>
             </div>

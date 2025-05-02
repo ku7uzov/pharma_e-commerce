@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-
 <html lang="ru">
 
-<head>
-    <meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="img/favicon-16x16.png">
     <title>Pharma e-Commerce: управление продажами через интернет-аптеки</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta
@@ -37,7 +37,22 @@
     <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/inputmask.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
-
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]function(){(m[i].a=m[i].a[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(101552932, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/101552932" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
 </head>
 
 
@@ -45,15 +60,12 @@
 
 
     <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border " style="width: 3rem; height: 3rem;color: rgba(36, 118, 247, 1);" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
     <!-- Spinner End -->
-
-
 
 
 
@@ -68,7 +80,7 @@
                 </a>
 
                 <!-- Кнопка-бургер справа -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" style="margin-left: 10px;">
                     <span class="fa fa-bars"></span>
                 </button>
 
@@ -96,7 +108,7 @@
                         </div>
 
                         <!-- Мобильная кнопка Телеграм -->
-                        <a href="https://t.me/V0VA_IV" target="_blank" class="btn btn-primary d-lg-none mt-3"
+                        <a href="https://t.me/e_commerce_pharmconsilium_bot" target="_blank" class="btn btn-primary d-lg-none mt-3"
                             style="border-radius: 30px; font-size: 16px; font-weight: 500;color:white">
                             Мы на связи в Телеграм!
                         </a>
@@ -104,14 +116,40 @@
                 </div>
 
                 <!-- Десктоп-кнопка Телеграм -->
-                <a href="https://t.me/V0VA_IV" target="_blank" class="btn btn-primary d-none d-lg-block ms-3"
+                <a href="https://t.me/e_commerce_pharmconsilium_bot" target="_blank" class="btn btn-primary d-none d-lg-block ms-3"
                     style="border-radius: 30px; font-size: 18px; font-weight: 500;color:white">
                     Мы на связи в Телеграм!
                 </a>
             </div>
         </nav>
     </div>
-
+    <style>
+        @media (max-width: 576px) {
+            .container-fluid {
+                display: flex;
+                flex-wrap: nowrap; /* Убираем оборачивание элементов */
+                justify-content: space-between; /* Равномерное распределение элементов */
+                align-items: center; /* Вертикальное выравнивание по центру */
+            }
+        
+            .navbar-nav {
+                width: auto; /* Убираем лишнее пространство для навигации */
+                margin-left: auto; /* Переносим навигацию к правому краю */
+            }
+        
+            .navbar-toggler {
+                order: 2; /* Перемещаем бургер в правую часть */
+            }
+        
+            .navbar-brand {
+                flex-grow: 1; /* Логотип занимает оставшееся пространство */
+            }
+        
+            .btn {
+                width: auto; /* Кнопка Telegram не будет растягиваться на весь экран */
+            }
+        }
+        </style>
 
     <!-- Carousel Start -->
     <div class="header-carousel owl-carousel">
@@ -209,7 +247,7 @@
                                 <h5 class="mb-4">Брендированные посадочные страницы</h5>
                                 <p class="mb-4">Создание групп посадочных страниц и контента, конвертирующего
                                     посетителей в покупателей</p>
-                                <a href="" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Подробнее</a>
+                                <a href="brand.html" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -410,7 +448,7 @@
                         </div>
 
                         <!-- Кнопка -->
-                        <div class="mt-auto text-center">
+                        <div class="mt-auto">
                             <button class="more-info-btn btn btn-primary text-white px-4 py-2" data-package="Старт"
                                 style="background-color: #2476f7; border-radius: 30px; font-size: 16px;">
                                 Узнать подробности
@@ -572,21 +610,24 @@
     <div class="modal fade" id="phoneModal" tabindex="-1" aria-labelledby="phoneModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content text-center">
-                <div class="modal-header">
-                    <h5 class="modal-title w-100" id="phoneModalLabel">Оставьте номер телефона и наш менеджер свяжется с
-                        вами!</h5>
+                <div class="modal-header" style="border-bottom:none">
+                   
+                        
+                   
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                 </div>
                 <div class="modal-body">
+                    <h3 class="" id="phoneModalLabel"> Спасибо за выбор</h3>
+
                     <!-- Отображение выбранного пакета -->
-                    <div id="selected-package" class="mb-3 fw-bold"></div>
+                    <p>Оставьте номер телефона и наш менеджер свяжется с вами!</p>
 
                     <!-- Поле ввода номера -->
                     <input type="tel" id="user-phone" placeholder="Введите номер телефона"
                         class="form-control w-50 mx-auto mb-2" />
 
                     <!-- Кнопка отправки -->
-                    <button id="send-phone-btn" class="btn btn-success w-100">Отправить номер</button>
+                    <button id="send-phone-btn" class="btn btn-primary text-white " style="min-width: 235px;">Отправить номер</button>
 
                     <!-- Сообщение об успехе/ошибке -->
                     <div id="result-msg" class="mt-2"></div>
@@ -594,6 +635,8 @@
             </div>
         </div>
     </div>
+
+
 
 
     <!-- Book Appointment Start -->
@@ -653,12 +696,11 @@
                     <div class="appointment-form  p-5" style="border-radius: 40px;background:rgba(36, 118, 247, 1)">
                         <!-- <p class="fs-4 text-uppercase text-primary">Форма обратной связи</p> -->
                         <h2 class="mb-4 text-white w-700">Получить персональное предложение</h2>
-                        <form action="https://formsubmit.co/romanprog.pharmconsilium@gmail.com" method="post">
+                        <form action="https://formsubmit.co/pharmconsilium@gmail.com" method="post">
                             <!-- Отключаем капчу и задаём редирект -->
                             <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="_next" value="https://http://e-commerce.pharmconsilium.com/thank_you.html">
                             <input type="hidden" name="_subject" value="Новая заявка с сайта">
-
                             <div class="row gy-3 gx-4">
                                 <div class="col-xl-6">
                                     <input type="text" name="brand"
@@ -1055,12 +1097,14 @@
                 <div class="col-md-6 col-lg-6 col-xl-3">
                     <div class="footer-item d-flex flex-column">
                         <h4 class="mb-4 text-white">ФармКонсилиум</h4>
-                        <a href=""> Беларусь, 230025, г. Гродно,
-                            площадь Советская 2А, офис 26</a>
-                        <a href="">pharmconsilium@gmail.com</a>
-                        <a href="">pharmconsilium.office@gmail.com</a>
+                        <a href="https://g.co/kgs/JFqXxSo" target="_blank">
+                            Беларусь, 230025, г. Гродно, площадь Советская 2А, офис 26
+                        </a>
+                        <a href="mailto:pharmconsilium@gmail.com">pharmconsilium@gmail.com</a>
+                        <a href="mailto:pharmconsilium.office@gmail.com">pharmconsilium.office@gmail.com</a>
                         <a href="tel:+375293220018">+375293220018</a>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -1093,7 +1137,7 @@
             document.querySelectorAll('.more-info-btn').forEach(button => {
     button.addEventListener('click', () => {
         selectedPackage = button.getAttribute('data-package');
-        document.getElementById('selected-package').textContent = `Вы выбрали пакет: "${selectedPackage}"`;
+        // document.getElementById('selected-package').textContent = `Вы выбрали пакет: "${selectedPackage}"`;
 
         // ✅ Показ модального окна
         const modal = new bootstrap.Modal(document.getElementById('phoneModal'));
@@ -1135,7 +1179,7 @@
                             const modal = bootstrap.Modal.getInstance(document.getElementById('phoneModal'));
                             if (modal) modal.hide();
                             resultMsg.textContent = '';
-                            document.getElementById('selected-package').textContent = '';
+                            // document.getElementById('selected-package').textContent = '';
                             selectedPackage = '';
                         }, 2000);
                     })
