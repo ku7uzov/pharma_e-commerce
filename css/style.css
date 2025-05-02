@@ -87,6 +87,7 @@
 .btn.btn-primary:hover {
     box-shadow: inset 300px 0 0 0 var(--bs-light) !important;
     color: var(--bs-primary) !important;
+    border-color: rgba(36, 118, 247, 1);
 }
 
 .btn.btn-light {
@@ -453,7 +454,7 @@
 
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel-2.jpg);
+    background: url(../img/second_background.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -461,7 +462,7 @@
 }
 
 .bg-breadcrumb .breadcrumb-item a {
-    color: var(--bs-white) !important;
+    color: black;
 }
 /*** Single Page Hero Header End ***/
 
@@ -1167,7 +1168,7 @@
 
 /*** Footer Start ***/
 .footer {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/carousel-2.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1262,4 +1263,52 @@
 
   body {
   font-family: 'Raleway', sans-serif;
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+.container_padding {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.service-img img {
+    border-radius: 48px;
+  
+}
+.service-img {
+    background-color: rgba(245, 245, 247, 1);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: rgba(32, 38, 47, 0.15);
+}
+.service-content {
+    border-bottom-right-radius: 50px !important;
+    border-bottom-left-radius: 50px !important;
+    background-color: rgba(245, 245, 247, 1);
+}
+.service-content h5 {
+    min-height: 75px;
+}
+.service-content p {
+    min-height: 75px;
+}
+
+.service-item:hover {
+    box-shadow: 0px 4px 12px rgba(32, 38, 47, 0.15);
+}
+.service-item {
+    border-radius: 50px;
+}
+
+.selectable-card {
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+
+.selectable-card.selected {
+    box-shadow: 0 0 10px 3px rgba(13, 110, 253, 0.5);
+    border: 2px solid #0d6efd;
 }

@@ -46,167 +46,189 @@
 
 
         <!-- Navbar & Hero Start -->
-        <div class="container-fluid position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
-                <a href="index.html" class="navbar-brand p-0">
-                    <h3 class="text-primary m-0"><img src="img/logo_pharmconsilium_1.png" alt="Logo" style="margin-bottom: 13px;">Pharma e-Commerce</h3>
-                    
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html#tools" class="nav-item nav-link">Увеличить продажи</a>
-                        <!-- <a href="#tools" class="nav-item nav-link">Tools</a> -->
-                        <a href="index.html#customer" class="nav-item nav-link">Путь пользователя к бренду</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Инструменты</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="optimization-card.html" class="dropdown-item">Оптимизация карточек товара</a>
-                                <a href="package-content.html" class="dropdown-item">Пакетное производство контента (постов)</a>
-                                <a href="brand.html" class="dropdown-item">Брендированные посадочные страницы</a>
-                                <a href="messanger-marketing.html" class="dropdown-item">Мессенджер - маркетинг</a>
-                                <a href="rep-brand.html" class="dropdown-item">Управление репутацией бренда</a>
-                                <a href="ad-company.html" class="dropdown-item">Рекламные кампании</a>
+        <div class="position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-3 py-2">
+                <div class="container_padding container-fluid d-flex flex-row justify-content-between align-items-center">
+        
+                    <!-- Левая часть: логотип -->
+                    <a href="index.html" class="navbar-brand d-flex align-items-center p-0 m-0">
+                        <img src="img/logo_pharm.png" alt="Logo" style="height: 32px; margin-right: 8px;">
+                        <span class="fw-bold" style="font-size: 18px;">Pharma e-Commerce</span>
+                    </a>
+        
+                    <!-- Кнопка-бургер справа -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+        
+                    <!-- Навигация -->
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto py-0 text-center">
+                            <a href="index.html#tools" class="nav-item nav-link">Увеличить продажи</a>
+                            <a href="index.html#customer" class="nav-item nav-link">Путь пользователя к бренду</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link" data-bs-toggle="dropdown">Инструменты
+                                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 0.9L7.65 7.05C7.84 7.24 8.16 7.24 8.35 7.05L14.5 0.9"
+                                              stroke="#20262F" stroke-width="1.5" stroke-linecap="round" />
+                                    </svg>
+                                </a>
+                                <div class="dropdown-menu m-0">
+                                    <a href="optimization-card.html" class="dropdown-item">Оптимизация карточек товара</a>
+                                    <a href="package-content.html" class="dropdown-item">Пакетное производство контента</a>
+                                    <a href="brand.html" class="dropdown-item">Брендированные посадочные</a>
+                                    <a href="messanger-marketing.html" class="dropdown-item">Мессенджер-маркетинг</a>
+                                    <a href="rep-brand.html" class="dropdown-item">Управление репутацией</a>
+                                    <a href="ad-company.html" class="dropdown-item">Рекламные кампании</a>
+                                </div>
                             </div>
+        
+                            <!-- Мобильная кнопка Телеграм -->
+                            <a href="https://t.me/V0VA_IV" target="_blank"
+                               class="btn btn-primary d-lg-none mt-3"
+                               style="border-radius: 30px; font-size: 16px; font-weight: 500;color:white">
+                                Мы на связи в Телеграм!
+                            </a>
                         </div>
-                        <a href="https://t.me/V0VA_IV" target="_blank" class="nav-item nav-link">Есть вопросы? Мы на связи в Телеграм!</a>
                     </div>
-                    <!-- <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Book Appointment</a> -->
+        
+                    <!-- Десктоп-кнопка Телеграм -->
+                    <a href="https://t.me/V0VA_IV" target="_blank"
+                       class="btn btn-primary d-none d-lg-block ms-3"
+                       style="border-radius: 30px; font-size: 18px; font-weight: 500;color:white">
+                        Мы на связи в Телеграм!
+                    </a>
                 </div>
             </nav>
+        </div>
         <!-- Navbar End -->
 
 
         <!-- Header Start -->
+
         <div class="container-fluid bg-breadcrumb">
             <div class="container text-center py-5" style="max-width: 900px;">
-                <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Брендированные посадочные страницы</h1>
+                <h3 class=" display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Брендированные посадочные страницы</h1>
                 <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
                     <li class="breadcrumb-item"><a href="index.html">Pharm E-commerce</a></li>
                     <!-- <li class="breadcrumb-item"><a href="#">Pages</a></li> -->
-                    <li class="breadcrumb-item active text-primary">Брендированные посадочные страницы</li>
+                    <li class="breadcrumb-item active " style="color: rgba(36, 118, 247, 1);">Брендированные посадочные страницыа</li>
                     <li class="breadcrumb-item "><a href="https://t.me/V0VA_IV" target="_blank" >Есть вопросы? Мы на связи в Телеграм!</a></li>
                 </ol>    
             </div>
         </div>
-        <!-- Header End -->
 
+        <!-- Header End -->
+        <div class="container-fluid py-5 container_padding text-center" style="background-color: rgba(36, 118, 247, 1);">
+            <div class="wow fadeInUp" data-wow-delay="0.2s">
+              <h3 style="color: white; font-weight: 400; font-size: clamp(16px, 4.5vw, 28px); margin-bottom: 0;">
+                Создание групп посадочных страниц и контента, конвертирующего посетителей в покупателей. Стратегия создания группы посадочных страниц по актуальным нуждам клиентов с мощными инструментами индексации по поисковым запросам формирует стабильный трафик покупателей. Внедрение механики сбора лидов и категоризации клиентов создает массив данных для более точного таргетирования  рекламы. 
+            </h3>
+            </div>
+          </div>
 
         <!-- Team Start -->
         <div class="container-fluid team py-5">
             <div class="container py-5">
-                <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <!-- <div class="sub-style">
-                        <h4 class="sub-title px-3 mb-0">Meet our team</h4>
-                    </div> -->
-                    <!-- <h1 class="display-3 mb-4">Physiotherapy Services from Professional Therapist</h1> -->
-                    <p class="mb-0"> Создание групп посадочных страниц и контента, конвертирующего посетителей в покупателей. Стратегия создания группы посадочных страниц по актуальным нуждам клиентов с мощными инструментами индексации по поисковым запросам формирует стабильный трафик покупателей. Внедрение механики сбора лидов и категоризации клиентов создает массив данных для более точного таргетирования  рекламы.</p>
-                </div>
+             
                 <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item rounded  selectable-card" data-id="1">
-                            <div class="team-img rounded-top h-100">
-                                <img src="img/photo_1.jpg" class="img-fluid rounded-top w-100" alt="">
-                                <div class="team-icon d-flex justify-content-center">
-                                    <!-- <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a> -->
-                                    <!-- <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a> -->
-                                    <!-- <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-telegram"></i></a> -->
-                                    <!-- <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a> -->
-                                </div>
+                  
+
+                    <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInUp " data-wow-delay="0.1s">
+                        <div class="service-item selectable-card"  data-id="1" style="border: 2px solid rgba(230, 230, 230, 1);border-radius: 50px;">
+                            <div class="service-img ">
+                                <img src="img/optimization_card.png" class="img-fluid  w-100" alt="">
                             </div>
-                            <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
-                                <h5>Регистрация доменного имени, выбор и приобретение хостинга, подключение SSL-сертификата</h5>
-                                <!-- <p class="mb-0">Message Physio Therapist</p> -->
+                            <div class="service-content rounded-bottom  p-4">
+                                <div class="service-content-inner">
+                                    <h5 class="mb-4">Регистрация доменного имени, выбор и приобретение хостинга, подключение SSL-сертификата</h5>
+                                    <a class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Выбрать</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item rounded selectable-card" data-id="2">
-                            <div class="team-img rounded-top h-100">
-                                <img src="img/photo_1.jpg" class="img-fluid rounded-top w-100" alt="">
-                                <div class="team-icon d-flex justify-content-center">
-                                    <!-- <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a> -->
-                                    <!-- <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a> -->
-                                    <!-- <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-telegram"></i></a> -->
-                                    <!-- <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a> -->
-                                </div>
+
+            
+                    <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInUp " data-wow-delay="0.3s">
+                        <div class="service-item selectable-card"  data-id="2" style="border: 2px solid rgba(230, 230, 230, 1);border-radius: 50px;">
+                            <div class="service-img ">
+                                <img src="img/optimization_card.png" class="img-fluid  w-100" alt="">
                             </div>
-                            <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
-                                <h5>Брендирование и дизайн посадочной страницы</h5>
-                                <!-- <p class="mb-0">Message Physio Therapist</p> -->
+                            <div class="service-content rounded-bottom  p-4">
+                                <div class="service-content-inner">
+                                    <h5 class="mb-4">Брендирование и дизайн посадочной страницы</h5>
+                                    <a class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Выбрать</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item rounded selectable-card" data-id="3">
-                            <div class="team-img rounded-top h-100">
-                                <img src="img/photo_1.jpg" class="img-fluid rounded-top w-100" alt="">
-                                <div class="team-icon d-flex justify-content-center">
-                                    <!-- <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a> -->
-                                </div>
+
+        
+
+                    <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInUp " data-wow-delay="0.6s">
+                        <div class="service-item selectable-card"  data-id="3" style="border: 2px solid rgba(230, 230, 230, 1);border-radius: 50px;">
+                            <div class="service-img ">
+                                <img src="img/optimization_card.png" class="img-fluid  w-100" alt="">
                             </div>
-                            <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
-                                <h5>Верстка и адаптивный дизайн</h5>
-                                <!-- <p class="mb-0">Doctor of Physical therapy</p> -->
+                            <div class="service-content rounded-bottom  p-4">
+                                <div class="service-content-inner">
+                                    <h5 class="mb-4">Верстка и адаптивный дизайн</h5>
+                                    <a class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Выбрать</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item rounded selectable-card" data-id="4">
-                            <div class="team-img rounded-top h-100">
-                                <img src="img/photo_1.jpg" class="img-fluid rounded-top w-100" alt="">
-                                <div class="team-icon d-flex justify-content-center">
-                                    <!-- <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a> -->
-                                </div>
+
+             
+                    <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInUp " data-wow-delay="0.1s">
+                        <div class="service-item selectable-card"  data-id="4" style="border: 2px solid rgba(230, 230, 230, 1);border-radius: 50px;">
+                            <div class="service-img ">
+                                <img src="img/optimization_card.png" class="img-fluid  w-100" alt="">
                             </div>
-                            <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
-                                <h5>SEO-настройка, настройка форм сбора заявок, интеграция внешних сервисов</h5>
-                                <!-- <p class="mb-0">Doctor of Physical therapy</p> -->
+                            <div class="service-content rounded-bottom  p-4">
+                                <div class="service-content-inner">
+                                    <h5 class="mb-4">SEO-настройка, настройка форм сбора заявок, интеграция внешних сервисов</h5>
+                                    <a class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Выбрать</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="team-item rounded selectable-card" data-id="5">
-                            <div class="team-img rounded-top h-100">
-                                <img src="img/photo_1.jpg" class="img-fluid rounded-top w-100" alt="">
-                                <div class="team-icon d-flex justify-content-center">
-                                    <!-- <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a> -->
-                                </div>
+
+              
+
+                    <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInUp " data-wow-delay="0.3s">
+                        <div class="service-item selectable-card"  data-id="5" style="border: 2px solid rgba(230, 230, 230, 1);border-radius: 50px;">
+                            <div class="service-img ">
+                                <img src="img/optimization_card.png" class="img-fluid  w-100" alt="">
                             </div>
-                            <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
-                                <h5>Технический аудит и тестирование, устранение уязвимостей, резервное копирование</h5>
-                                <!-- <p class="mb-0">Doctor of Physical therapy</p> -->
+                            <div class="service-content rounded-bottom  p-4">
+                                <div class="service-content-inner">
+                                    <h5 class="mb-4">Технический аудит и тестирование, устранение уязвимостей, резервное копирование</h5>
+                                    <a class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Выбрать</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.9s">
-                        <div class="team-item rounded selectable-card" data-id="6">
-                            <div class="team-img rounded-top h-100">
-                                <img src="img/photo_1.jpg" class="img-fluid rounded-top w-100" alt="">
-                                <div class="team-icon d-flex justify-content-center">
-                                    <!-- <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a> -->
-                                </div>
+
+
+            
+
+                    
+                    <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInUp " data-wow-delay="0.6s">
+                        <div class="service-item selectable-card"  data-id="6" style="border: 2px solid rgba(230, 230, 230, 1);border-radius: 50px;">
+                            <div class="service-img ">
+                                <img src="img/optimization_card.png" class="img-fluid  w-100" alt="">
                             </div>
-                            <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
-                                <h5>Обновление и сопровождение. Подключение веб-аналитики.</h5>
-                                <!-- <p class="mb-0">Doctor of Physical therapy</p> -->
+                            <div class="service-content rounded-bottom  p-4">
+                                <div class="service-content-inner">
+                                    <h5 class="mb-4">Обновление и сопровождение. Подключение веб-аналитики.</h5>
+                                    <a class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Выбрать</a>
+                                </div>
                             </div>
                         </div>
                     </div>
+
           
                 </div>
             </div>
@@ -214,141 +236,124 @@
         <!-- Team End -->
         
             <!-- Кнопка "Отправить" -->
-     <div class="col-12 d-flex justify-content-center">
-         <button id="submit-selection" class="btn btn-primary d-none bottom-0 end-0 m-4" data-bs-toggle="modal" data-bs-target="#phoneModal">
-           Отправить
-         </button>
-       </div>
-        
-  <!-- Модальное окно -->
-  <div class="modal fade" id="phoneModal" tabindex="-1" aria-labelledby="phoneModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content text-center">
-        <div class="modal-header">
-          <h5 class="modal-title w-100" id="phoneModalLabel">Оставьте номер, и наш менеджер свяжется с вами</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-        </div>
-        <div class="modal-body">
-            <input type="tel" id="user-phone" placeholder="Введите номер телефона" class="form-control w-50 mx-auto mb-2" />
+            <div class="col-12 d-flex justify-content-center">
+                <button id="submit-selection" class=" btn btn-primary d-none rounded-pill text-white mb-4" data-bs-toggle="modal" data-bs-target="#phoneModal">
+                Отправить
+                </button>
+            </div>
+            
+        <!-- Модальное окно -->
+        <div class="modal fade" id="phoneModal" tabindex="-1" aria-labelledby="phoneModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+            <div class="modal-header">
+                <h5 class="modal-title w-100" id="phoneModalLabel">Оставьте номер, и наш менеджер свяжется с вами</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <input type="tel" id="user-phone" placeholder="Введите номер телефона" class="form-control w-50 mx-auto mb-2" />
 
-          <button id="send-phone-btn" class="btn btn-primary w-100">Отправить номер</button>
-          <div id="result-msg" class="mt-2"></div>
+                <button id="send-phone-btn" class="btn btn-primary text-white w-100">Отправить номер</button>
+                <div id="result-msg" class="mt-2"></div>
+            </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  
+        </div>
+ 
 
-        <div class="container-fluid appointment py-5" id="ai">
+        <div class="container-fluid appointment py-5" id="ai" style="background-image: url('img/second_background.png');object-fit: fill;width: 100%;">
             <div class="container py-5">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2">
                         <div class="section-title text-start">
                             <!-- <h4 class="sub-title pe-3 mb-0">Калькулятор бюджета</h4> -->
-                            <h1 class="display-4 mb-4">Совет от ИИ-ассистента</h1>
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Воспользуйтесь бонусом! Получите совет от ИИ-ассистента по возможным рекламным кампаниям вашего бренда </h5> <p>Получите Мы предлагаем уникальную услугу для расчета бюджета на эффективное продвижение вашего фармацевтического бренда через онлайн-каналы продаж. Чтобы помочь вам максимизировать результаты и достигнуть целей с минимальными затратами, мы подготовили специальный калькулятор бюджета.
+                            <h1 class="mb-4">Совет от ИИ-ассистента</h1>
+                            <h5 class="mb-3" style="font-size: 24px;font-weight: 500;"> Воспользуйтесь бонусом! Получите
+                                совет от ИИ-ассистента по возможным рекламным кампаниям вашего бренда </h5>
+                            <p style="font-size: 18px;">Получите Мы предлагаем уникальную услугу для расчета бюджета на эффективное продвижение
+                                вашего фармацевтического бренда через онлайн-каналы продаж. Чтобы помочь вам максимизировать
+                                результаты и достигнуть целей с минимальными затратами, мы подготовили специальный
+                                калькулятор бюджета.
                                 <br>
-                                Заполнив несколько простых данных, вы получите точную оценку необходимого бюджета для продвижения вашего бренда. Мы поможем вам спланировать рекламные кампании, оптимизировать карточки товара и эффективно привлекать трафик к вашим точкам продаж.
-                                Вы получите рекомендации по оптимизации рекламных кампаний, улучшению карточек товара и укреплению репутации вашего бренда.</p>
+                                Заполнив несколько простых данных, вы получите точную оценку необходимого бюджета для
+                                продвижения вашего бренда. Мы поможем вам спланировать рекламные кампании, оптимизировать
+                                карточки товара и эффективно привлекать трафик к вашим точкам продаж.
+                                Вы получите рекомендации по оптимизации рекламных кампаний, улучшению карточек товара и
+                                укреплению репутации вашего бренда.
                             </p>
-                                <div class="row g-4">
+                            </p>
+                            <div class="row g-4">
                                 <div class="col-sm-6">
                                     <div class="d-flex flex-column h-100">
                                         <!-- <div class="mb-4"> -->
-                                            <!-- <h5 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Как это работает ?</h5> -->
-                                            <!-- <p class="mb-0">описание...</p> -->
+                                        <!-- <h5 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Как это работает ?</h5> -->
+                                        <!-- <p class="mb-0">описание...</p> -->
                                         <!-- </div> -->
                                         <!-- <div class="mb-4">
-                                            <h5 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Body Relaxation</h5>
-                                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et deserunt qui cupiditate veritatis enim ducimus.</p>
-                                        </div> -->
+                                                <h5 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Body Relaxation</h5>
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et deserunt qui cupiditate veritatis enim ducimus.</p>
+                                            </div> -->
                                         <div class="text-start mb-4">
-                                            <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5 open-chat-btn">Получить бонус</a>
+                                            <a href="#"
+                                                class="btn btn-primary rounded-pill mt-3 text-white py-3 px-5 open-chat-btn">Получить бонус</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    
-                                        <!-- <img src="img/post_1.png" class="img-fluid rounded w-100 h-100" style="object-fit: cover;" alt="">
-                                        <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                                            <span></span>
-                                        </button> -->
-                                
+    
+                                    <!-- <img src="img/post_1.png" class="img-fluid rounded w-100 h-100" style="object-fit: cover;" alt="">
+                                            <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                                                <span></span>
+                                            </button> -->
+    
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
-                        <div class="appointment-form rounded p-5">
+                    <div class="col-lg-6 wow fadeInRight " data-wow-delay="0.4s">
+                        <div class="appointment-form  p-5" style="border-radius: 40px;background:rgba(36, 118, 247, 1)">
                             <!-- <p class="fs-4 text-uppercase text-primary">Форма обратной связи</p> -->
-                            <h1 class="display-5 mb-4">Получить персональное предложение</h1>
+                            <h2 class="mb-4 text-white w-700">Получить персональное предложение</h2>
                             <form action="https://formsubmit.co/romanprog.pharmconsilium@gmail.com" method="post">
-                            <!-- Отключаем капчу и задаём редирект -->
-                            <input type="hidden" name="_captcha" value="false">
-                            <input
-                              type="hidden"
-                              name="_next"
-                              value="https://127.0.0.1:5500/thank_you.html" 
-                            >
-                            <input
-                              type="hidden"
-                              name="_subject"
-                              value="Новая заявка с сайта"
-                            >
-                      
-                            <div class="row gy-3 gx-4">
-                              <div class="col-xl-6">
-                                <input
-                                  type="text"
-                                  name="brand"
-                                  class="form-control py-3 border-primary bg-transparent text-white"
-                                  placeholder="Ваш бренд"
-                                  required
-                                >
-                              </div>
-                              <div class="col-xl-6">
-                                <input
-                                  type="text"
-                                  name="growth"
-                                  class="form-control py-3 border-primary bg-transparent text-white"
-                                  placeholder="Процент прироста продаж"
-                                  required
-                                >
-                              </div>
-                              <div class="col-xl-12">
-                                <input
-                                  type="email"
-                                  name="email"
-                                  class="form-control py-3 border-primary bg-transparent text-white"
-                                  placeholder="Ваша почта"
-                                  required
-                                >
-                              </div>
-                              <div class="col-12">
-                                <textarea
-                                  name="comment"
-                                  id="area-text"
-                                  class="form-control border-primary bg-transparent text-white"
-                                  cols="30"
-                                  rows="5"
-                                  placeholder="Ваш комментарий"
-                                ></textarea>
-                              </div>
-                              <div class="col-12">
-                                <button
-                                  type="submit"
-                                  class="btn btn-primary text-white w-100 py-3 px-5"
-                                >
-                                  Отправить
-                                </button>
-                              </div>
-                            </div>
-                          </form>
+                                <!-- Отключаем капчу и задаём редирект -->
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_next" value="https://127.0.0.1:5500/thank_you.html">
+                                <input type="hidden" name="_subject" value="Новая заявка с сайта">
+    
+                                <div class="row gy-3 gx-4">
+                                    <div class="col-xl-6">
+                                        <input type="text" name="brand"
+                                            class="form-control py-3 border-primary bg-transparent "
+                                            placeholder="Ваш бренд" required>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <input type="text" name="growth"
+                                            class="form-control py-3 border-primary bg-transparent "
+                                            placeholder="Процент прироста продаж" required>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <input type="email" name="email"
+                                            class="form-control py-3 border-primary bg-transparent "
+                                            placeholder="Ваша почта" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea name="comment" id="area-text"
+                                            class="form-control border-primary bg-transparent " cols="30" rows="5"
+                                            placeholder="Ваш комментарий"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary w-100 py-3 px-5 text-white" style="background-color: black;">
+                                            Отправить
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <!-- Footer Start -->
         <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
             <div class="container py-5">
@@ -356,70 +361,107 @@
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="text-white mb-4">PharmConsilium</h4>
-                            <a href="https://pharmconsilium.com/" target="_blank"><i class="fas fa-angle-right me-2"></i> О нас</a>
-                            <p>Увеличьте продажи ваших препаратов через интернет-аптеки и маркетплейсы с Pharma e-Commerce. Полный контроль от первого клика до продажи.
+                            <a href="https://pharmconsilium.com/" target="_blank"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.60042 19.7254C1.4246 19.9012 1.18614 20 0.937496 20C0.688853 20 0.450395 19.9012 0.27458 19.7254C0.0987658 19.5496 -3.69283e-06 19.3111 -4.08786e-08 19.0625C3.61107e-06 18.8138 0.0987802 18.5754 0.2746 18.3996L8.67416 10L0.274599 1.60044C0.0987794 1.42462 2.85655e-06 1.18616 -8.14519e-07 0.937521C-4.48558e-06 0.688879 0.098765 0.450418 0.27458 0.274599C0.450394 0.0987778 0.688852 3.78459e-06 0.937495 -4.09792e-08C1.18614 -3.86655e-06 1.4246 0.0987644 1.60042 0.274578L10.6629 9.33707C10.75 9.42412 10.819 9.52748 10.8661 9.64122C10.9133 9.75497 10.9375 9.87688 10.9375 10C10.9375 10.1231 10.9133 10.245 10.8661 10.3588C10.819 10.4725 10.75 10.5759 10.6629 10.6629L1.60042 19.7254ZM8.90189 1.60044L17.3015 10L8.9019 18.3996C8.72608 18.5754 8.6273 18.8138 8.6273 19.0625C8.62729 19.3111 8.72606 19.5496 8.90188 19.7254C9.07769 19.9012 9.31615 20 9.56479 20C9.81343 20 10.0519 19.9012 10.2277 19.7254L19.2902 10.6629C19.3773 10.5759 19.4463 10.4725 19.4934 10.3588C19.5406 10.245 19.5648 10.1231 19.5648 10C19.5648 9.87688 19.5406 9.75497 19.4934 9.64122C19.4463 9.52748 19.3773 9.42412 19.2902 9.33707L10.2277 0.274578C10.0519 0.098764 9.81343 -4.24366e-06 9.56479 -4.1809e-07C9.31615 3.40748e-06 9.07769 0.0987774 8.90187 0.274599C8.72606 0.450418 8.62729 0.688879 8.62729 0.937521C8.6273 1.18616 8.72608 1.42462 8.90189 1.60044Z" fill="white"/>
+                                </svg>
+                                 О
+                                нас</a>
+                            <p style="color: white;">Увеличьте продажи ваших препаратов через интернет-аптеки и маркетплейсы с Pharma e-Commerce.
+                                Полный контроль от первого клика до продажи.
                             </p>
-                            
+    
                             <div class="d-flex align-items-center">
                                 <i class="fas fa-share fa-2x text-white me-2"></i>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://t.me/PharmConsilium" target="_blank"><i class="fab fa-telegram"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.pinterest.com/pharmconsilium/" target="_blank"><i class="fab fa-pinterest"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.instagram.com/pharmconsilium/" target="_blank"><i class="fab fa-instagram"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.youtube.com/channel/UCLjkMonolXAtMYPOAi1dlGQ" target="_blank"><i class="fab fa-youtube"></i></a>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1"
+                                    href="https://t.me/PharmConsilium" target="_blank"><i class="fab fa-telegram"></i></a>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1"
+                                    href="https://www.pinterest.com/pharmconsilium/" target="_blank"><i
+                                        class="fab fa-pinterest"></i></a>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1"
+                                    href="https://www.instagram.com/pharmconsilium/" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1"
+                                    href="https://www.youtube.com/channel/UCLjkMonolXAtMYPOAi1dlGQ" target="_blank"><i
+                                        class="fab fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="mb-4 text-white">Инструменты</h4>
-                            <a href="optimization-card.html"><i class="fas fa-angle-right me-2"></i> Оптимизация карточек товара</a>
-                            <a href="package-content.html"><i class="fas fa-angle-right me-2"></i>Пакетное производство контента (постов)</a>
-                            <a href="brand.html"><i class="fas fa-angle-right me-2"></i>Брендированные посадочные страницы</a>
-                            <a href="messanger-marketing.html"><i class="fas fa-angle-right me-2"></i>Мессенджер - маркетинг</a>
-                            <a href="rep-brand.html"><i class="fas fa-angle-right me-2"></i>Управление репутацией бренда</a>
-                            <a href="ad-company.html"><i class="fas fa-angle-right me-2"></i> Рекламные кампании</a>
+                            <a href="optimization-card.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.60042 19.7254C1.4246 19.9012 1.18614 20 0.937496 20C0.688853 20 0.450395 19.9012 0.27458 19.7254C0.0987658 19.5496 -3.69283e-06 19.3111 -4.08786e-08 19.0625C3.61107e-06 18.8138 0.0987802 18.5754 0.2746 18.3996L8.67416 10L0.274599 1.60044C0.0987794 1.42462 2.85655e-06 1.18616 -8.14519e-07 0.937521C-4.48558e-06 0.688879 0.098765 0.450418 0.27458 0.274599C0.450394 0.0987778 0.688852 3.78459e-06 0.937495 -4.09792e-08C1.18614 -3.86655e-06 1.4246 0.0987644 1.60042 0.274578L10.6629 9.33707C10.75 9.42412 10.819 9.52748 10.8661 9.64122C10.9133 9.75497 10.9375 9.87688 10.9375 10C10.9375 10.1231 10.9133 10.245 10.8661 10.3588C10.819 10.4725 10.75 10.5759 10.6629 10.6629L1.60042 19.7254ZM8.90189 1.60044L17.3015 10L8.9019 18.3996C8.72608 18.5754 8.6273 18.8138 8.6273 19.0625C8.62729 19.3111 8.72606 19.5496 8.90188 19.7254C9.07769 19.9012 9.31615 20 9.56479 20C9.81343 20 10.0519 19.9012 10.2277 19.7254L19.2902 10.6629C19.3773 10.5759 19.4463 10.4725 19.4934 10.3588C19.5406 10.245 19.5648 10.1231 19.5648 10C19.5648 9.87688 19.5406 9.75497 19.4934 9.64122C19.4463 9.52748 19.3773 9.42412 19.2902 9.33707L10.2277 0.274578C10.0519 0.098764 9.81343 -4.24366e-06 9.56479 -4.1809e-07C9.31615 3.40748e-06 9.07769 0.0987774 8.90187 0.274599C8.72606 0.450418 8.62729 0.688879 8.62729 0.937521C8.6273 1.18616 8.72608 1.42462 8.90189 1.60044Z" fill="white"/>
+                                </svg>
+                                 Оптимизация карточек
+                                товара</a>
+                            <a href="package-content.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.60042 19.7254C1.4246 19.9012 1.18614 20 0.937496 20C0.688853 20 0.450395 19.9012 0.27458 19.7254C0.0987658 19.5496 -3.69283e-06 19.3111 -4.08786e-08 19.0625C3.61107e-06 18.8138 0.0987802 18.5754 0.2746 18.3996L8.67416 10L0.274599 1.60044C0.0987794 1.42462 2.85655e-06 1.18616 -8.14519e-07 0.937521C-4.48558e-06 0.688879 0.098765 0.450418 0.27458 0.274599C0.450394 0.0987778 0.688852 3.78459e-06 0.937495 -4.09792e-08C1.18614 -3.86655e-06 1.4246 0.0987644 1.60042 0.274578L10.6629 9.33707C10.75 9.42412 10.819 9.52748 10.8661 9.64122C10.9133 9.75497 10.9375 9.87688 10.9375 10C10.9375 10.1231 10.9133 10.245 10.8661 10.3588C10.819 10.4725 10.75 10.5759 10.6629 10.6629L1.60042 19.7254ZM8.90189 1.60044L17.3015 10L8.9019 18.3996C8.72608 18.5754 8.6273 18.8138 8.6273 19.0625C8.62729 19.3111 8.72606 19.5496 8.90188 19.7254C9.07769 19.9012 9.31615 20 9.56479 20C9.81343 20 10.0519 19.9012 10.2277 19.7254L19.2902 10.6629C19.3773 10.5759 19.4463 10.4725 19.4934 10.3588C19.5406 10.245 19.5648 10.1231 19.5648 10C19.5648 9.87688 19.5406 9.75497 19.4934 9.64122C19.4463 9.52748 19.3773 9.42412 19.2902 9.33707L10.2277 0.274578C10.0519 0.098764 9.81343 -4.24366e-06 9.56479 -4.1809e-07C9.31615 3.40748e-06 9.07769 0.0987774 8.90187 0.274599C8.72606 0.450418 8.62729 0.688879 8.62729 0.937521C8.6273 1.18616 8.72608 1.42462 8.90189 1.60044Z" fill="white"/>
+                                </svg>
+                                Пакетное производство
+                                контента (постов)</a>
+                            <a href="brand.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.60042 19.7254C1.4246 19.9012 1.18614 20 0.937496 20C0.688853 20 0.450395 19.9012 0.27458 19.7254C0.0987658 19.5496 -3.69283e-06 19.3111 -4.08786e-08 19.0625C3.61107e-06 18.8138 0.0987802 18.5754 0.2746 18.3996L8.67416 10L0.274599 1.60044C0.0987794 1.42462 2.85655e-06 1.18616 -8.14519e-07 0.937521C-4.48558e-06 0.688879 0.098765 0.450418 0.27458 0.274599C0.450394 0.0987778 0.688852 3.78459e-06 0.937495 -4.09792e-08C1.18614 -3.86655e-06 1.4246 0.0987644 1.60042 0.274578L10.6629 9.33707C10.75 9.42412 10.819 9.52748 10.8661 9.64122C10.9133 9.75497 10.9375 9.87688 10.9375 10C10.9375 10.1231 10.9133 10.245 10.8661 10.3588C10.819 10.4725 10.75 10.5759 10.6629 10.6629L1.60042 19.7254ZM8.90189 1.60044L17.3015 10L8.9019 18.3996C8.72608 18.5754 8.6273 18.8138 8.6273 19.0625C8.62729 19.3111 8.72606 19.5496 8.90188 19.7254C9.07769 19.9012 9.31615 20 9.56479 20C9.81343 20 10.0519 19.9012 10.2277 19.7254L19.2902 10.6629C19.3773 10.5759 19.4463 10.4725 19.4934 10.3588C19.5406 10.245 19.5648 10.1231 19.5648 10C19.5648 9.87688 19.5406 9.75497 19.4934 9.64122C19.4463 9.52748 19.3773 9.42412 19.2902 9.33707L10.2277 0.274578C10.0519 0.098764 9.81343 -4.24366e-06 9.56479 -4.1809e-07C9.31615 3.40748e-06 9.07769 0.0987774 8.90187 0.274599C8.72606 0.450418 8.62729 0.688879 8.62729 0.937521C8.6273 1.18616 8.72608 1.42462 8.90189 1.60044Z" fill="white"/>
+                                </svg>
+                                Брендированные посадочные
+                                страницы</a>
+                            <a href="messanger-marketing.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.60042 19.7254C1.4246 19.9012 1.18614 20 0.937496 20C0.688853 20 0.450395 19.9012 0.27458 19.7254C0.0987658 19.5496 -3.69283e-06 19.3111 -4.08786e-08 19.0625C3.61107e-06 18.8138 0.0987802 18.5754 0.2746 18.3996L8.67416 10L0.274599 1.60044C0.0987794 1.42462 2.85655e-06 1.18616 -8.14519e-07 0.937521C-4.48558e-06 0.688879 0.098765 0.450418 0.27458 0.274599C0.450394 0.0987778 0.688852 3.78459e-06 0.937495 -4.09792e-08C1.18614 -3.86655e-06 1.4246 0.0987644 1.60042 0.274578L10.6629 9.33707C10.75 9.42412 10.819 9.52748 10.8661 9.64122C10.9133 9.75497 10.9375 9.87688 10.9375 10C10.9375 10.1231 10.9133 10.245 10.8661 10.3588C10.819 10.4725 10.75 10.5759 10.6629 10.6629L1.60042 19.7254ZM8.90189 1.60044L17.3015 10L8.9019 18.3996C8.72608 18.5754 8.6273 18.8138 8.6273 19.0625C8.62729 19.3111 8.72606 19.5496 8.90188 19.7254C9.07769 19.9012 9.31615 20 9.56479 20C9.81343 20 10.0519 19.9012 10.2277 19.7254L19.2902 10.6629C19.3773 10.5759 19.4463 10.4725 19.4934 10.3588C19.5406 10.245 19.5648 10.1231 19.5648 10C19.5648 9.87688 19.5406 9.75497 19.4934 9.64122C19.4463 9.52748 19.3773 9.42412 19.2902 9.33707L10.2277 0.274578C10.0519 0.098764 9.81343 -4.24366e-06 9.56479 -4.1809e-07C9.31615 3.40748e-06 9.07769 0.0987774 8.90187 0.274599C8.72606 0.450418 8.62729 0.688879 8.62729 0.937521C8.6273 1.18616 8.72608 1.42462 8.90189 1.60044Z" fill="white"/>
+                                </svg>
+                                Мессенджер -
+                                маркетинг</a>
+                            <a href="rep-brand.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.60042 19.7254C1.4246 19.9012 1.18614 20 0.937496 20C0.688853 20 0.450395 19.9012 0.27458 19.7254C0.0987658 19.5496 -3.69283e-06 19.3111 -4.08786e-08 19.0625C3.61107e-06 18.8138 0.0987802 18.5754 0.2746 18.3996L8.67416 10L0.274599 1.60044C0.0987794 1.42462 2.85655e-06 1.18616 -8.14519e-07 0.937521C-4.48558e-06 0.688879 0.098765 0.450418 0.27458 0.274599C0.450394 0.0987778 0.688852 3.78459e-06 0.937495 -4.09792e-08C1.18614 -3.86655e-06 1.4246 0.0987644 1.60042 0.274578L10.6629 9.33707C10.75 9.42412 10.819 9.52748 10.8661 9.64122C10.9133 9.75497 10.9375 9.87688 10.9375 10C10.9375 10.1231 10.9133 10.245 10.8661 10.3588C10.819 10.4725 10.75 10.5759 10.6629 10.6629L1.60042 19.7254ZM8.90189 1.60044L17.3015 10L8.9019 18.3996C8.72608 18.5754 8.6273 18.8138 8.6273 19.0625C8.62729 19.3111 8.72606 19.5496 8.90188 19.7254C9.07769 19.9012 9.31615 20 9.56479 20C9.81343 20 10.0519 19.9012 10.2277 19.7254L19.2902 10.6629C19.3773 10.5759 19.4463 10.4725 19.4934 10.3588C19.5406 10.245 19.5648 10.1231 19.5648 10C19.5648 9.87688 19.5406 9.75497 19.4934 9.64122C19.4463 9.52748 19.3773 9.42412 19.2902 9.33707L10.2277 0.274578C10.0519 0.098764 9.81343 -4.24366e-06 9.56479 -4.1809e-07C9.31615 3.40748e-06 9.07769 0.0987774 8.90187 0.274599C8.72606 0.450418 8.62729 0.688879 8.62729 0.937521C8.6273 1.18616 8.72608 1.42462 8.90189 1.60044Z" fill="white"/>
+                                </svg>
+                                Управление репутацией бренда</a>
+                            <a href="ad-company.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.60042 19.7254C1.4246 19.9012 1.18614 20 0.937496 20C0.688853 20 0.450395 19.9012 0.27458 19.7254C0.0987658 19.5496 -3.69283e-06 19.3111 -4.08786e-08 19.0625C3.61107e-06 18.8138 0.0987802 18.5754 0.2746 18.3996L8.67416 10L0.274599 1.60044C0.0987794 1.42462 2.85655e-06 1.18616 -8.14519e-07 0.937521C-4.48558e-06 0.688879 0.098765 0.450418 0.27458 0.274599C0.450394 0.0987778 0.688852 3.78459e-06 0.937495 -4.09792e-08C1.18614 -3.86655e-06 1.4246 0.0987644 1.60042 0.274578L10.6629 9.33707C10.75 9.42412 10.819 9.52748 10.8661 9.64122C10.9133 9.75497 10.9375 9.87688 10.9375 10C10.9375 10.1231 10.9133 10.245 10.8661 10.3588C10.819 10.4725 10.75 10.5759 10.6629 10.6629L1.60042 19.7254ZM8.90189 1.60044L17.3015 10L8.9019 18.3996C8.72608 18.5754 8.6273 18.8138 8.6273 19.0625C8.62729 19.3111 8.72606 19.5496 8.90188 19.7254C9.07769 19.9012 9.31615 20 9.56479 20C9.81343 20 10.0519 19.9012 10.2277 19.7254L19.2902 10.6629C19.3773 10.5759 19.4463 10.4725 19.4934 10.3588C19.5406 10.245 19.5648 10.1231 19.5648 10C19.5648 9.87688 19.5406 9.75497 19.4934 9.64122C19.4463 9.52748 19.3773 9.42412 19.2902 9.33707L10.2277 0.274578C10.0519 0.098764 9.81343 -4.24366e-06 9.56479 -4.1809e-07C9.31615 3.40748e-06 9.07769 0.0987774 8.90187 0.274599C8.72606 0.450418 8.62729 0.688879 8.62729 0.937521C8.6273 1.18616 8.72608 1.42462 8.90189 1.60044Z" fill="white"/>
+                                </svg>
+                                 Рекламные кампании</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="mb-4 text-white">Навигация</h4>
-                            <a href="index.html#tools"><i class="fas fa-angle-right me-2"></i> Увеличить продажи</a>
-                            <a href="index.html#customer"><i class="fas fa-angle-right me-2"></i> Путь пользователя к бренду</a>
-                            <a href="index.html#tools"><i class="fas fa-angle-right me-2"></i> Инструменты</a>
-                            <a href="index.html#format"><i class="fas fa-angle-right me-2"></i> Форматы работ</a>
-                            <a href="#ai"><i class="fas fa-angle-right me-2"></i> ИИ ассистент</a>
+                            <a href="index.html#tools"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.60042 19.7254C1.4246 19.9012 1.18614 20 0.937496 20C0.688853 20 0.450395 19.9012 0.27458 19.7254C0.0987658 19.5496 -3.69283e-06 19.3111 -4.08786e-08 19.0625C3.61107e-06 18.8138 0.0987802 18.5754 0.2746 18.3996L8.67416 10L0.274599 1.60044C0.0987794 1.42462 2.85655e-06 1.18616 -8.14519e-07 0.937521C-4.48558e-06 0.688879 0.098765 0.450418 0.27458 0.274599C0.450394 0.0987778 0.688852 3.78459e-06 0.937495 -4.09792e-08C1.18614 -3.86655e-06 1.4246 0.0987644 1.60042 0.274578L10.6629 9.33707C10.75 9.42412 10.819 9.52748 10.8661 9.64122C10.9133 9.75497 10.9375 9.87688 10.9375 10C10.9375 10.1231 10.9133 10.245 10.8661 10.3588C10.819 10.4725 10.75 10.5759 10.6629 10.6629L1.60042 19.7254ZM8.90189 1.60044L17.3015 10L8.9019 18.3996C8.72608 18.5754 8.6273 18.8138 8.6273 19.0625C8.62729 19.3111 8.72606 19.5496 8.90188 19.7254C9.07769 19.9012 9.31615 20 9.56479 20C9.81343 20 10.0519 19.9012 10.2277 19.7254L19.2902 10.6629C19.3773 10.5759 19.4463 10.4725 19.4934 10.3588C19.5406 10.245 19.5648 10.1231 19.5648 10C19.5648 9.87688 19.5406 9.75497 19.4934 9.64122C19.4463 9.52748 19.3773 9.42412 19.2902 9.33707L10.2277 0.274578C10.0519 0.098764 9.81343 -4.24366e-06 9.56479 -4.1809e-07C9.31615 3.40748e-06 9.07769 0.0987774 8.90187 0.274599C8.72606 0.450418 8.62729 0.688879 8.62729 0.937521C8.6273 1.18616 8.72608 1.42462 8.90189 1.60044Z" fill="white"/>
+                                </svg>
+                                 Увеличить продажи</a>
+                            <a href="index.html#customer"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.60042 19.7254C1.4246 19.9012 1.18614 20 0.937496 20C0.688853 20 0.450395 19.9012 0.27458 19.7254C0.0987658 19.5496 -3.69283e-06 19.3111 -4.08786e-08 19.0625C3.61107e-06 18.8138 0.0987802 18.5754 0.2746 18.3996L8.67416 10L0.274599 1.60044C0.0987794 1.42462 2.85655e-06 1.18616 -8.14519e-07 0.937521C-4.48558e-06 0.688879 0.098765 0.450418 0.27458 0.274599C0.450394 0.0987778 0.688852 3.78459e-06 0.937495 -4.09792e-08C1.18614 -3.86655e-06 1.4246 0.0987644 1.60042 0.274578L10.6629 9.33707C10.75 9.42412 10.819 9.52748 10.8661 9.64122C10.9133 9.75497 10.9375 9.87688 10.9375 10C10.9375 10.1231 10.9133 10.245 10.8661 10.3588C10.819 10.4725 10.75 10.5759 10.6629 10.6629L1.60042 19.7254ZM8.90189 1.60044L17.3015 10L8.9019 18.3996C8.72608 18.5754 8.6273 18.8138 8.6273 19.0625C8.62729 19.3111 8.72606 19.5496 8.90188 19.7254C9.07769 19.9012 9.31615 20 9.56479 20C9.81343 20 10.0519 19.9012 10.2277 19.7254L19.2902 10.6629C19.3773 10.5759 19.4463 10.4725 19.4934 10.3588C19.5406 10.245 19.5648 10.1231 19.5648 10C19.5648 9.87688 19.5406 9.75497 19.4934 9.64122C19.4463 9.52748 19.3773 9.42412 19.2902 9.33707L10.2277 0.274578C10.0519 0.098764 9.81343 -4.24366e-06 9.56479 -4.1809e-07C9.31615 3.40748e-06 9.07769 0.0987774 8.90187 0.274599C8.72606 0.450418 8.62729 0.688879 8.62729 0.937521C8.6273 1.18616 8.72608 1.42462 8.90189 1.60044Z" fill="white"/>
+                                </svg>
+                                 Путь пользователя к
+                                бренду</a>
+                            <a href="index.html#tools"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.60042 19.7254C1.4246 19.9012 1.18614 20 0.937496 20C0.688853 20 0.450395 19.9012 0.27458 19.7254C0.0987658 19.5496 -3.69283e-06 19.3111 -4.08786e-08 19.0625C3.61107e-06 18.8138 0.0987802 18.5754 0.2746 18.3996L8.67416 10L0.274599 1.60044C0.0987794 1.42462 2.85655e-06 1.18616 -8.14519e-07 0.937521C-4.48558e-06 0.688879 0.098765 0.450418 0.27458 0.274599C0.450394 0.0987778 0.688852 3.78459e-06 0.937495 -4.09792e-08C1.18614 -3.86655e-06 1.4246 0.0987644 1.60042 0.274578L10.6629 9.33707C10.75 9.42412 10.819 9.52748 10.8661 9.64122C10.9133 9.75497 10.9375 9.87688 10.9375 10C10.9375 10.1231 10.9133 10.245 10.8661 10.3588C10.819 10.4725 10.75 10.5759 10.6629 10.6629L1.60042 19.7254ZM8.90189 1.60044L17.3015 10L8.9019 18.3996C8.72608 18.5754 8.6273 18.8138 8.6273 19.0625C8.62729 19.3111 8.72606 19.5496 8.90188 19.7254C9.07769 19.9012 9.31615 20 9.56479 20C9.81343 20 10.0519 19.9012 10.2277 19.7254L19.2902 10.6629C19.3773 10.5759 19.4463 10.4725 19.4934 10.3588C19.5406 10.245 19.5648 10.1231 19.5648 10C19.5648 9.87688 19.5406 9.75497 19.4934 9.64122C19.4463 9.52748 19.3773 9.42412 19.2902 9.33707L10.2277 0.274578C10.0519 0.098764 9.81343 -4.24366e-06 9.56479 -4.1809e-07C9.31615 3.40748e-06 9.07769 0.0987774 8.90187 0.274599C8.72606 0.450418 8.62729 0.688879 8.62729 0.937521C8.6273 1.18616 8.72608 1.42462 8.90189 1.60044Z" fill="white"/>
+                                </svg>
+                                 Инструменты</a>
+                            <a href="index.html#format"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.60042 19.7254C1.4246 19.9012 1.18614 20 0.937496 20C0.688853 20 0.450395 19.9012 0.27458 19.7254C0.0987658 19.5496 -3.69283e-06 19.3111 -4.08786e-08 19.0625C3.61107e-06 18.8138 0.0987802 18.5754 0.2746 18.3996L8.67416 10L0.274599 1.60044C0.0987794 1.42462 2.85655e-06 1.18616 -8.14519e-07 0.937521C-4.48558e-06 0.688879 0.098765 0.450418 0.27458 0.274599C0.450394 0.0987778 0.688852 3.78459e-06 0.937495 -4.09792e-08C1.18614 -3.86655e-06 1.4246 0.0987644 1.60042 0.274578L10.6629 9.33707C10.75 9.42412 10.819 9.52748 10.8661 9.64122C10.9133 9.75497 10.9375 9.87688 10.9375 10C10.9375 10.1231 10.9133 10.245 10.8661 10.3588C10.819 10.4725 10.75 10.5759 10.6629 10.6629L1.60042 19.7254ZM8.90189 1.60044L17.3015 10L8.9019 18.3996C8.72608 18.5754 8.6273 18.8138 8.6273 19.0625C8.62729 19.3111 8.72606 19.5496 8.90188 19.7254C9.07769 19.9012 9.31615 20 9.56479 20C9.81343 20 10.0519 19.9012 10.2277 19.7254L19.2902 10.6629C19.3773 10.5759 19.4463 10.4725 19.4934 10.3588C19.5406 10.245 19.5648 10.1231 19.5648 10C19.5648 9.87688 19.5406 9.75497 19.4934 9.64122C19.4463 9.52748 19.3773 9.42412 19.2902 9.33707L10.2277 0.274578C10.0519 0.098764 9.81343 -4.24366e-06 9.56479 -4.1809e-07C9.31615 3.40748e-06 9.07769 0.0987774 8.90187 0.274599C8.72606 0.450418 8.62729 0.688879 8.62729 0.937521C8.6273 1.18616 8.72608 1.42462 8.90189 1.60044Z" fill="white"/>
+                                </svg>
+                                 Форматы работ</a>
+                            <a href="#ai"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.60042 19.7254C1.4246 19.9012 1.18614 20 0.937496 20C0.688853 20 0.450395 19.9012 0.27458 19.7254C0.0987658 19.5496 -3.69283e-06 19.3111 -4.08786e-08 19.0625C3.61107e-06 18.8138 0.0987802 18.5754 0.2746 18.3996L8.67416 10L0.274599 1.60044C0.0987794 1.42462 2.85655e-06 1.18616 -8.14519e-07 0.937521C-4.48558e-06 0.688879 0.098765 0.450418 0.27458 0.274599C0.450394 0.0987778 0.688852 3.78459e-06 0.937495 -4.09792e-08C1.18614 -3.86655e-06 1.4246 0.0987644 1.60042 0.274578L10.6629 9.33707C10.75 9.42412 10.819 9.52748 10.8661 9.64122C10.9133 9.75497 10.9375 9.87688 10.9375 10C10.9375 10.1231 10.9133 10.245 10.8661 10.3588C10.819 10.4725 10.75 10.5759 10.6629 10.6629L1.60042 19.7254ZM8.90189 1.60044L17.3015 10L8.9019 18.3996C8.72608 18.5754 8.6273 18.8138 8.6273 19.0625C8.62729 19.3111 8.72606 19.5496 8.90188 19.7254C9.07769 19.9012 9.31615 20 9.56479 20C9.81343 20 10.0519 19.9012 10.2277 19.7254L19.2902 10.6629C19.3773 10.5759 19.4463 10.4725 19.4934 10.3588C19.5406 10.245 19.5648 10.1231 19.5648 10C19.5648 9.87688 19.5406 9.75497 19.4934 9.64122C19.4463 9.52748 19.3773 9.42412 19.2902 9.33707L10.2277 0.274578C10.0519 0.098764 9.81343 -4.24366e-06 9.56479 -4.1809e-07C9.31615 3.40748e-06 9.07769 0.0987774 8.90187 0.274599C8.72606 0.450418 8.62729 0.688879 8.62729 0.937521C8.6273 1.18616 8.72608 1.42462 8.90189 1.60044Z" fill="white"/>
+                                </svg>
+                                 ИИ ассистент</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="mb-4 text-white">ФармКонсилиум</h4>
-                            <a href="https://www.google.com/maps/place/Farmkonsilium/@53.6787813,23.8252065,16z/data=!3m1!4b1!4m6!3m5!1s0x46dfd62e77c032f7:0x64283abf394495c2!8m2!3d53.6787782!4d23.8300774!16s%2Fg%2F11clyz0pxm?entry=ttu" target="_blank">
-                                <i class="fa fa-map-marker-alt me-2"></i> Беларусь, 230025, г. Гродно, площадь Советская 2А, офис 26
-                              </a>
-                              
-                              <a href="mailto:pharmconsilium@gmail.com"><i class="fas fa-envelope me-2"></i> pharmconsilium@gmail.com</a>
-                              <a href="mailto:pharmconsilium.office@gmail.com"><i class="fas fa-envelope me-2"></i> pharmconsilium.office@gmail.com</a>
-                              <a href="tel:+375293220018"><i class="fas fa-phone me-2"></i> +375293220018</a>
-                              
+                            <a href=""> Беларусь, 230025, г. Гродно,
+                                площадь Советская 2А, офис 26</a>
+                            <a href="">pharmconsilium@gmail.com</a>
+                            <a href="">pharmconsilium.office@gmail.com</a>
+                            <a href="tel:+375293220018">+375293220018</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Footer End -->
+        <!-- Footer End -->
         
-        <style>
-            
-            .selectable-card {
-            cursor: pointer;
-            transition: box-shadow 0.3s ease;
-        }
-        .selectable-card.selected {
-            box-shadow: 0 0 10px 3px #0d6efd;
-            border: 2px solid #0d6efd;
-        }
-        
-        </style>
+     
         <script>
           document.addEventListener('DOMContentLoaded', () => {
                 const BOT_TOKEN = '7664316970:AAHDDZtywUidM6RqvQOn_MmVURCVhY2972I';
