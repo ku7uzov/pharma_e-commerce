@@ -70,8 +70,8 @@
 
 
     <div class="position-relative p-0">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white px-3 py-2">
-            <div class="container_padding container-fluid d-flex flex-row justify-content-between align-items-center">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+         
 
                 <!-- Левая часть: логотип -->
                 <a href="index.html" class="navbar-brand d-flex align-items-center p-0 m-0">
@@ -80,13 +80,12 @@
                 </a>
 
                 <!-- Кнопка-бургер справа -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" style="margin-left: 10px;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
-
                 <!-- Навигация -->
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0 text-center">
+                    <div class="navbar-nav ms-auto py-0 ">
                         <a href="index.html#tools" class="nav-item nav-link">Увеличить продажи</a>
                         <a href="index.html#customer" class="nav-item nav-link">Путь пользователя к бренду</a>
                         <div class="nav-item dropdown">
@@ -120,36 +119,10 @@
                     style="border-radius: 30px; font-size: 18px; font-weight: 500;color:white">
                     Мы на связи в Телеграм!
                 </a>
-            </div>
+         
         </nav>
     </div>
-    <style>
-        @media (max-width: 576px) {
-            .container-fluid {
-                display: flex;
-                flex-wrap: nowrap; /* Убираем оборачивание элементов */
-                justify-content: space-between; /* Равномерное распределение элементов */
-                align-items: center; /* Вертикальное выравнивание по центру */
-            }
-        
-            .navbar-nav {
-                width: auto; /* Убираем лишнее пространство для навигации */
-                margin-left: auto; /* Переносим навигацию к правому краю */
-            }
-        
-            .navbar-toggler {
-                order: 2; /* Перемещаем бургер в правую часть */
-            }
-        
-            .navbar-brand {
-                flex-grow: 1; /* Логотип занимает оставшееся пространство */
-            }
-        
-            .btn {
-                width: auto; /* Кнопка Telegram не будет растягиваться на весь экран */
-            }
-        }
-        </style>
+ 
 
     <!-- Carousel Start -->
     <div class="header-carousel owl-carousel">
