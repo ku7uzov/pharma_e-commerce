@@ -1179,6 +1179,11 @@
     transition: 0.5s;
 }
 
+.footer .footer-item a svg {
+    margin-bottom: 4px;
+    width: 10px;
+}
+
 
 .footer .footer-item a:hover {
     color: var(--bs-primary);
